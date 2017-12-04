@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/untitled2.dir/mainServer.cpp.o CMakeFiles/untitled2.dir/Server.cpp.o  -o untitled2 
