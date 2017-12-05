@@ -45,7 +45,6 @@ void Server::start() {
     // Start listening to incoming connections
     if (listen(serverSocket, MAX_CONNECTED_CLIENTS) < 0) {
         throw "Error listening to socket";
-
     }
     socklen_t clientAddressLen = sizeof(clientAddress);
     //while (true) {
@@ -62,7 +61,6 @@ void Server::start() {
 
         //handleClient(clientSocket);
 // Close communication with the client
-        close(clientSocket);
 
 
     char buffer[4096];
@@ -84,6 +82,7 @@ void Server::start() {
 
 
 
+    close(clientSocket);
 
 }
 
