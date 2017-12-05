@@ -9,7 +9,7 @@
 
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 10
+#define MAX_CONNECTED_CLIENTS 2
 /*
 struct sockaddr {
         unsigned short sa_family;
@@ -31,35 +31,59 @@ void Server::start() {
     if (serverSocket < 0) {
         throw "Error opening socket";
     }
-
-// Define the client socket's structures
-    struct sockaddr_in clientAddress;
-    socklen_t clientAddressLen;
-
-// Assign a local address to the socket
     struct sockaddr_in serverAddress;
-    memset(&clientAddress,0, sizeof(clientAddress));
+// Assign a local address to the socket
+    memset(&serverAddress, 0, sizeof(serverAddress));
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = INADDR_ANY;
     serverAddress.sin_port = htons(port);
+// Define the client socket's structures
+    struct sockaddr_in clientAddress;
     if (bind(serverSocket, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error on binding";
     }
     // Start listening to incoming connections
-    listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    while (true) {
+    if (listen(serverSocket, MAX_CONNECTED_CLIENTS) < 0) {
+        throw "Error listening to socket";
+
+    }
+    socklen_t clientAddressLen = sizeof(clientAddress);
+    //while (true) {
         cout << "Waiting for client connections..." << endl;
 // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct
-                sockaddr *)&clientAddress, &clientAddressLen);
+                sockaddr *) &clientAddress, &clientAddressLen);
         cout << "Client connected" << endl;
+
         if (clientSocket == -1) {
-            throw "Error on accept";
+
+            throw "Error accepting client";
         }
-        handleClient(clientSocket);
+
+        //handleClient(clientSocket);
 // Close communication with the client
         close(clientSocket);
+
+
+    char buffer[4096];
+    int expectedDataLength = sizeof(buffer);
+    int readByte=recv(clientSocket,buffer,expectedDataLength,0);
+    if (readByte==0) {
+        throw "connection is closed";
+    } else if (readByte<=0) {
+        throw "no receive";
     }
+    else {
+        cout << buffer;
+        }
+
+    int sendByte=(clientSocket,buffer,readByte,0);
+    if (sendByte<0) {
+        throw "error sending to client";
+    }
+
+
+
 
 }
 
