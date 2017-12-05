@@ -2,14 +2,9 @@
 #include<sys/socket.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-
 #include <unistd.h>
-
 #include <string.h>
-
 #include <iostream>
-
-
 #include "Server.h"
 
 
@@ -36,21 +31,22 @@ void Server::start() {
     if (serverSocket < 0) {
         throw "Error opening socket";
     }
-// Start listening to incoming connections
-    listen(serverSocket, MAX_CONNECTED_CLIENTS);
+
 // Define the client socket's structures
     struct sockaddr_in clientAddress;
     socklen_t clientAddressLen;
 
 // Assign a local address to the socket
     struct sockaddr_in serverAddress;
-    bzero((void *) &serverAddress, sizeof(serverAddress));
+    memset(&clientAddress,0, sizeof(clientAddress));
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = INADDR_ANY;
     serverAddress.sin_port = htons(port);
     if (bind(serverSocket, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error on binding";
     }
+    // Start listening to incoming connections
+    listen(serverSocket, MAX_CONNECTED_CLIENTS);
     while (true) {
         cout << "Waiting for client connections..." << endl;
 // Accept a new client connection
