@@ -10,6 +10,7 @@ private:
     int port;
     int serverSocket; // the socket's file descriptor
     void handleClient(int clientSocket);
+    void handleClients(int clientSocket1, int clientSocket2);
     int calc(int arg1, const char op, int arg2) const;
 };
 #define UNTITLED_SERVER_H
