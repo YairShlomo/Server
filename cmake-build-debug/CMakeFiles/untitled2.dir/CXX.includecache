@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gal/CLionProjects/ports/Server/Server.cpp
+/home/yair/CLionProjects/Server/Server.cpp
 sys/socket.h
 -
 sys/socket.h
@@ -20,17 +20,19 @@ string.h
 iostream
 -
 Server.h
-/home/gal/CLionProjects/ports/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 
-/home/gal/CLionProjects/ports/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 
-/home/gal/CLionProjects/ports/Server/mainServer.cpp
+/home/yair/CLionProjects/Server/mainServer.cpp
 Server.h
-/home/gal/CLionProjects/ports/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 Server.h
-/home/gal/CLionProjects/ports/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 iostream
 -
 stdlib.h
+-
+fstream
 -
 

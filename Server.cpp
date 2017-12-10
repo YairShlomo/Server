@@ -7,7 +7,6 @@
 #include <iostream>
 #include "Server.h"
 
-
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
 /*
@@ -64,7 +63,8 @@ void Server::start() {
         if (clientSocket2 == -1) {
             throw "Error accepting client";
         }
-        cout << "two clients are connected" << endl;
+        cout << "2 clients connected" << endl;
+
         //handleClient(clientSocket);
 // Close communication with the client
 
@@ -98,6 +98,7 @@ void Server::start() {
         if (sendByte < 0) {
             throw "error sending to client";
         }
+        handleClients(clientSocket,clientSocket2);
 
 
     }
@@ -119,7 +120,11 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             otherSocket = clientSocket1;
         }
 
-        n = read(currentSocket, buffer, sizeof(buffer));
+        n = read(currentSocket, &buffer, sizeof(buffer));
+        cout << buffer << endl;
+        cout << buffer[0] << endl;
+        cout << buffer[1] << endl;
+
         if (n == -1) {
             cout << "Error reading" << endl;
             return;
@@ -128,11 +133,13 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             cout << "Client disconnected" << endl;
             return;
         }
-        if(buffer=="End") {
+        if(strcmp(buffer,"End")==0) {
+            close(clientSocket1);
+            close(clientSocket2);
             close(serverSocket);
             return;
         }
-        n = send(otherSocket,buffer,sizeof(buffer),0);
+        n = write(otherSocket,&buffer,sizeof(buffer));
         if (n == -1) {
             cout << "Error writing to socket" << endl;
             return;
