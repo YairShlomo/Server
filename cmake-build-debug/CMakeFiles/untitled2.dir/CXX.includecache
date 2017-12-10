@@ -9,8 +9,6 @@
 /home/yair/CLionProjects/Server/Server.cpp
 sys/socket.h
 -
-sys/socket.h
--
 netinet/in.h
 -
 unistd.h
@@ -27,11 +25,7 @@ Server.h
 /home/yair/CLionProjects/Server/mainServer.cpp
 Server.h
 /home/yair/CLionProjects/Server/Server.h
-Server.h
-/home/yair/CLionProjects/Server/Server.h
 iostream
--
-stdlib.h
 -
 fstream
 -
