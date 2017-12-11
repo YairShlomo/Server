@@ -88,16 +88,19 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
         }
 
         n = read(currentSocket, &buffer, sizeof(buffer));
-        cout << buffer << endl;
-        cout << buffer[0] << endl;
-        cout << buffer[1] << endl;
+
 
         if (n == -1) {
             cout << "Error reading" << endl;
             return;
         }
         if (n == 0) {
-            cout << "Client disconnected" << endl;
+            char finish[7] ="ENDC";
+            int clientEnd = write(otherSocket,&finish,sizeof(buffer));
+            if (clientEnd == -1) {
+                throw "Error writing to socket";
+            }
+            cout <<"Client disconnected"<<endl;
             return;
         }
         if(strcmp(buffer,"End")==0) {
@@ -106,10 +109,19 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             close(serverSocket);
             return;
         }
+        if(strcmp(buffer,"X")==0) {
+            close(clientSocket1);
+            close(serverSocket);
+            return;
+        }
+        if(strcmp(buffer,"O")==0) {
+            close(clientSocket2);
+            close(serverSocket);
+            return;
+        }
         n = write(otherSocket,&buffer,sizeof(buffer));
         if (n == -1) {
-            cout << "Error writing to socket" << endl;
-            return;
+            throw "Error writing to socket";
         }
         turn = !turn;
     }
