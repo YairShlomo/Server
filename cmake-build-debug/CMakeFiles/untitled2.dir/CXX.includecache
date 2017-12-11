@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yair/CLionProjects/Server/Server.cpp
+/home/gal/CLionProjects/mission4/src/Server/Server.cpp
 sys/socket.h
 -
 netinet/in.h
@@ -18,13 +18,13 @@ string.h
 iostream
 -
 Server.h
-/home/yair/CLionProjects/Server/Server.h
+/home/gal/CLionProjects/mission4/src/Server/Server.h
 
-/home/yair/CLionProjects/Server/Server.h
+/home/gal/CLionProjects/mission4/src/Server/Server.h
 
-/home/yair/CLionProjects/Server/mainServer.cpp
+/home/gal/CLionProjects/mission4/src/Server/mainServer.cpp
 Server.h
-/home/yair/CLionProjects/Server/Server.h
+/home/gal/CLionProjects/mission4/src/Server/Server.h
 iostream
 -
 fstream

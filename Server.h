@@ -6,7 +6,7 @@ ID: 305216962
 */
 #ifndef UNTITLED_SERVER_H
 #define UNTITLED_SERVER_H
-
+#include <stdlib.h>
 class Server {
 public:
     Server(int port);
