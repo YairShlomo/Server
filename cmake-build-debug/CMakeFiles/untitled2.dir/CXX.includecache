@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/yair/CLionProjects/Server/Command.h
+vector
+-
+string
+-
+
+/home/yair/CLionProjects/Server/CommandsManager.cpp
+CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
+StartCommand.cpp
+/home/yair/CLionProjects/Server/StartCommand.cpp
+
+/home/yair/CLionProjects/Server/CommandsManager.h
+map
+-
+Command.h
+/home/yair/CLionProjects/Server/Command.h
+
 /home/yair/CLionProjects/Server/Server.cpp
 sys/socket.h
 -
@@ -22,6 +40,12 @@ Server.h
 
 /home/yair/CLionProjects/Server/Server.h
 stdlib.h
+-
+
+/home/yair/CLionProjects/Server/StartCommand.cpp
+Command.h
+/home/yair/CLionProjects/Server/Command.h
+iostream
 -
 
 /home/yair/CLionProjects/Server/mainServer.cpp

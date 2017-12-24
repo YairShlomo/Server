@@ -39,6 +39,7 @@ void Server::start() {
     }
     socklen_t clientAddressLen = sizeof(clientAddress);
     socklen_t clientAddressLen2 = sizeof(clientAddress);
+
     while (true) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection

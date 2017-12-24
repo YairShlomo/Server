@@ -123,6 +123,33 @@ untitled2/fast:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/build
 .PHONY : untitled2/fast
 
+CommandsManager.o: CommandsManager.cpp.o
+
+.PHONY : CommandsManager.o
+
+# target to build an object file
+CommandsManager.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CommandsManager.cpp.o
+.PHONY : CommandsManager.cpp.o
+
+CommandsManager.i: CommandsManager.cpp.i
+
+.PHONY : CommandsManager.i
+
+# target to preprocess a source file
+CommandsManager.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CommandsManager.cpp.i
+.PHONY : CommandsManager.cpp.i
+
+CommandsManager.s: CommandsManager.cpp.s
+
+.PHONY : CommandsManager.s
+
+# target to generate assembly for a file
+CommandsManager.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CommandsManager.cpp.s
+.PHONY : CommandsManager.cpp.s
+
 Server.o: Server.cpp.o
 
 .PHONY : Server.o
@@ -149,6 +176,33 @@ Server.s: Server.cpp.s
 Server.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/Server.cpp.s
 .PHONY : Server.cpp.s
+
+StartCommand.o: StartCommand.cpp.o
+
+.PHONY : StartCommand.o
+
+# target to build an object file
+StartCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/StartCommand.cpp.o
+.PHONY : StartCommand.cpp.o
+
+StartCommand.i: StartCommand.cpp.i
+
+.PHONY : StartCommand.i
+
+# target to preprocess a source file
+StartCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/StartCommand.cpp.i
+.PHONY : StartCommand.cpp.i
+
+StartCommand.s: StartCommand.cpp.s
+
+.PHONY : StartCommand.s
+
+# target to generate assembly for a file
+StartCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/StartCommand.cpp.s
+.PHONY : StartCommand.cpp.s
 
 mainServer.o: mainServer.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled2"
+	@echo "... CommandsManager.o"
+	@echo "... CommandsManager.i"
+	@echo "... CommandsManager.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... StartCommand.o"
+	@echo "... StartCommand.i"
+	@echo "... StartCommand.s"
 	@echo "... mainServer.o"
 	@echo "... mainServer.i"
 	@echo "... mainServer.s"

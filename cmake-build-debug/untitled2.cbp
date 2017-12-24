@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yair/CLionProjects/Server/Command.h">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/Server/CommandsManager.cpp">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/Server/CommandsManager.h">
+			<Option target="untitled2"/>
+		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/Server.cpp">
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/Server.h">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/Server/StartCommand.cpp">
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/mainServer.cpp">
