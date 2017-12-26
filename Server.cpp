@@ -4,18 +4,15 @@ ID: 308536150
 Name:Gal Eini
 ID: 305216962
 */
-#include<sys/socket.h>
-#include <netinet/in.h>
-#include <unistd.h>
-#include <string.h>
-#include <iostream>
+
 #include "Server.h"
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 2
+#define MAX_CONNECTED_CLIENTS 10
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "Server" << endl;
 }
 void Server::start() {
+
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket < 0) {
@@ -28,8 +25,8 @@ void Server::start() {
     serverAddress.sin_addr.s_addr = INADDR_ANY;
     serverAddress.sin_port = htons(port);
     // Define the client socket's structures
-    struct sockaddr_in clientAddress;
-    struct sockaddr_in clientAddress2;
+
+    //struct sockaddr_in clientAddress2;
     if (bind(serverSocket, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error on binding";
     }
@@ -37,10 +34,14 @@ void Server::start() {
     if (listen(serverSocket, MAX_CONNECTED_CLIENTS) < 0) {
         throw "Error listening to socket";
     }
-    socklen_t clientAddressLen = sizeof(clientAddress);
-    socklen_t clientAddressLen2 = sizeof(clientAddress);
 
-    while (true) {
+   // socklen_t clientAddressLen2 = sizeof(clientAddress);
+
+    pthread_t thread;
+    int rc = pthread_create(&thread, NULL, listening, (void *)serverSocket);
+    /* while (true) {
+        //int rc = pthread_create(&threads[0], NULL, printHello, NULL);
+
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct
@@ -49,7 +50,8 @@ void Server::start() {
         if (clientSocket == -1) {
             throw "Error accepting client";
         }
-        cout << "Waiting for another client connections..." << endl;
+
+       cout << "Waiting for another client connections..." << endl;
         char approval[2] = {'1'};
         int sendApproval = send(clientSocket, &approval[0], 1, 0);
         if (sendApproval < 0) {
@@ -70,11 +72,41 @@ void Server::start() {
         if (sendByte < 0) {
             throw "error sending to client";
         }
-        handleClients(clientSocket,clientSocket2);
+        handleClient(clientSocket);
+        close(clientSocket);
+        i++;
+    }*/
+    pthread_exit(NULL);
+}
+void* Server::listening(void *sSocket) {
+    struct sockaddr_in clientAddress;
+    long serverSocket = (long)sSocket;
+    socklen_t clientAddressLen = sizeof(clientAddress);
+    vector<pthread_t> gameThreads;
+    while (true) {
+        cout << "Waiting for client connections..." << endl;
+        // Accept a new client connection
+        int clientSocket = accept(serverSocket, (struct
+                sockaddr *) &clientAddress, &clientAddressLen);
+        cout << "Client connected" << endl;
+        if (clientSocket == -1) {
+            throw "Error accepting client";
+        }
+        pthread_t thread;
+        gameThreads.push_back(thread);
+        int gT = pthread_create(&gameThreads[gameThreads.size()], NULL, handleClient, (void *)clientSocket);
+        //handleClient(clientSocket);
+        close(clientSocket);
+
     }
 }
+void* Server::handleClient(void* clientSocket1){
+    int x;
+    cin >> x;
 
-void Server::handleClients(int clientSocket1, int clientSocket2) {
+}
+
+void Server::handleGame(int clientSocket1, int clientSocket2) {
     char buffer[7];
     int n, currentSocket, otherSocket;
     bool turn = true;

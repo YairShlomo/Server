@@ -6,25 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/yair/CLionProjects/Server/Command.h
+/home/gal/CLionProjects/Server/Command.h
 vector
 -
 string
 -
 
-/home/yair/CLionProjects/Server/CommandsManager.cpp
+/home/gal/CLionProjects/Server/CommandsManager.cpp
 CommandsManager.h
-/home/yair/CLionProjects/Server/CommandsManager.h
+/home/gal/CLionProjects/Server/CommandsManager.h
 StartCommand.cpp
-/home/yair/CLionProjects/Server/StartCommand.cpp
+/home/gal/CLionProjects/Server/StartCommand.cpp
 
-/home/yair/CLionProjects/Server/CommandsManager.h
+/home/gal/CLionProjects/Server/CommandsManager.h
 map
 -
 Command.h
-/home/yair/CLionProjects/Server/Command.h
+/home/gal/CLionProjects/Server/Command.h
 
-/home/yair/CLionProjects/Server/Server.cpp
+/home/gal/CLionProjects/Server/Server.cpp
+Server.h
+/home/gal/CLionProjects/Server/Server.h
+
+/home/gal/CLionProjects/Server/Server.h
+vector
+-
+pthread.h
+-
+cstdlib
+-
 sys/socket.h
 -
 netinet/in.h
@@ -35,22 +45,16 @@ string.h
 -
 iostream
 -
-Server.h
-/home/yair/CLionProjects/Server/Server.h
 
-/home/yair/CLionProjects/Server/Server.h
-stdlib.h
--
-
-/home/yair/CLionProjects/Server/StartCommand.cpp
+/home/gal/CLionProjects/Server/StartCommand.cpp
 Command.h
-/home/yair/CLionProjects/Server/Command.h
+/home/gal/CLionProjects/Server/Command.h
 iostream
 -
 
-/home/yair/CLionProjects/Server/mainServer.cpp
+/home/gal/CLionProjects/Server/mainServer.cpp
 Server.h
-/home/yair/CLionProjects/Server/Server.h
+/home/gal/CLionProjects/Server/Server.h
 iostream
 -
 fstream

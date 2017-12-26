@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yair/CLionProjects/Server/CommandsManager.cpp" "/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o"
-  "/home/yair/CLionProjects/Server/Server.cpp" "/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o"
-  "/home/yair/CLionProjects/Server/StartCommand.cpp" "/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o"
-  "/home/yair/CLionProjects/Server/mainServer.cpp" "/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/mainServer.cpp.o"
+  "/home/gal/CLionProjects/Server/CommandsManager.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o"
+  "/home/gal/CLionProjects/Server/Server.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o"
+  "/home/gal/CLionProjects/Server/StartCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o"
+  "/home/gal/CLionProjects/Server/mainServer.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/mainServer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -6,7 +6,14 @@ ID: 305216962
 */
 #ifndef UNTITLED_SERVER_H
 #define UNTITLED_SERVER_H
-#include <stdlib.h>
+#include<vector>
+#include <pthread.h>
+#include <cstdlib>
+#include<sys/socket.h>
+#include <netinet/in.h>
+#include <unistd.h>
+#include <string.h>
+#include <iostream>
 class Server {
 public:
     Server(int port);
@@ -15,9 +22,9 @@ public:
 private:
     int port;
     int serverSocket; // the socket's file descriptor
-    void handleClient(int clientSocket);
-    void handleClients(int clientSocket1, int clientSocket2);
-    int calc(int arg1, const char op, int arg2) const;
+    static void* handleClient(void *clientSocket);
+    void handleGame(int clientSocket1, int clientSocket2);
+    static void* listening(void *threadId);
 };
 
 #endif //UNTITLED_SERVER_H
