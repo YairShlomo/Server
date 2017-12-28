@@ -1,24 +1,24 @@
-#ifndef UNTITLED2_COMMANDMANAGER_H
-#define UNTITLED2_COMMANDMANAGER_H
+#ifndef COMMANDMANAGER_H
+#define COMMANDMANAGER_H
 
 
 
-#ifndef CommandsManager_H_
-#define CommandsManager_H_
 #include <map>
 #include "Command.h"
+#include "HandleClient.h"
 
 class CommandsManager {
 public:
-    CommandsManager();
+    CommandsManager(map<string,int> Games);
     ~CommandsManager();
-    void executeCommand(string command, vector<string> args);
+    void executeCommand(string command, vector<string> args,clientInfo clientInfo);
 private:
     map<string, Command *> commandsMap;
+    map<string,int> games;
+
 };
 
 #endif /* CommandsManager_H_ */
 
 
 
-#endif //UNTITLED2_COMMANDMANAGER_H

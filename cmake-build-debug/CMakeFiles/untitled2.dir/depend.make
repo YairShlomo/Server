@@ -4,14 +4,26 @@
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CommandsManager.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CommandsManager.h
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../StartCommand.cpp
 
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Command.h
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../CommandsManager.h
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.cpp
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.h
+
+CMakeFiles/untitled2.dir/Server.cpp.o: ../Command.h
+CMakeFiles/untitled2.dir/Server.cpp.o: ../CommandsManager.h
+CMakeFiles/untitled2.dir/Server.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Server.cpp
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Server.h
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../StartCommand.cpp
 
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Command.h
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../CommandsManager.h
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Server.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../mainServer.cpp
 

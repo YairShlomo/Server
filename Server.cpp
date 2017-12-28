@@ -5,9 +5,13 @@ Name:Gal Eini
 ID: 305216962
 */
 
+#include <sstream>
 #include "Server.h"
+#include "HandleClient.h"
+
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
+map <string,int> Game;
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "Server" << endl;
 }
@@ -88,23 +92,11 @@ void* Server::listening(void *sSocket) {
         // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
-        cout << "Client connected" << endl;
-        if (clientSocket == -1) {
-            throw "Error accepting client";
-        }
-        pthread_t thread;
-        gameThreads.push_back(thread);
-        int gT = pthread_create(&gameThreads[gameThreads.size()], NULL, handleClient, (void *)clientSocket);
-        //handleClient(clientSocket);
-        close(clientSocket);
-
+        HandleClient handleClient;
+        handleClient.run(clientSocket);
     }
 }
-void* Server::handleClient(void* clientSocket1){
-    int x;
-    cin >> x;
 
-}
 
 void Server::handleGame(int clientSocket1, int clientSocket2) {
     char buffer[7];

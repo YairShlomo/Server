@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gal/CLionProjects/Server
+CMAKE_SOURCE_DIR = /home/yair/CLionProjects/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gal/CLionProjects/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/CLionProjects/Server/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/gal/CLionProjects/Server/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,60 @@ CommandsManager.s: CommandsManager.cpp.s
 CommandsManager.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CommandsManager.cpp.s
 .PHONY : CommandsManager.cpp.s
+
+GameHandle.o: GameHandle.cpp.o
+
+.PHONY : GameHandle.o
+
+# target to build an object file
+GameHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/GameHandle.cpp.o
+.PHONY : GameHandle.cpp.o
+
+GameHandle.i: GameHandle.cpp.i
+
+.PHONY : GameHandle.i
+
+# target to preprocess a source file
+GameHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/GameHandle.cpp.i
+.PHONY : GameHandle.cpp.i
+
+GameHandle.s: GameHandle.cpp.s
+
+.PHONY : GameHandle.s
+
+# target to generate assembly for a file
+GameHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/GameHandle.cpp.s
+.PHONY : GameHandle.cpp.s
+
+HandleClient.o: HandleClient.cpp.o
+
+.PHONY : HandleClient.o
+
+# target to build an object file
+HandleClient.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleClient.cpp.o
+.PHONY : HandleClient.cpp.o
+
+HandleClient.i: HandleClient.cpp.i
+
+.PHONY : HandleClient.i
+
+# target to preprocess a source file
+HandleClient.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleClient.cpp.i
+.PHONY : HandleClient.cpp.i
+
+HandleClient.s: HandleClient.cpp.s
+
+.PHONY : HandleClient.s
+
+# target to generate assembly for a file
+HandleClient.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleClient.cpp.s
+.PHONY : HandleClient.cpp.s
 
 Server.o: Server.cpp.o
 
@@ -243,6 +297,12 @@ help:
 	@echo "... CommandsManager.o"
 	@echo "... CommandsManager.i"
 	@echo "... CommandsManager.s"
+	@echo "... GameHandle.o"
+	@echo "... GameHandle.i"
+	@echo "... GameHandle.s"
+	@echo "... HandleClient.o"
+	@echo "... HandleClient.i"
+	@echo "... HandleClient.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

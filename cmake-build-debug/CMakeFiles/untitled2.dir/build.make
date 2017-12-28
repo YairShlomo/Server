@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gal/CLionProjects/Server
+CMAKE_SOURCE_DIR = /home/yair/CLionProjects/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gal/CLionProjects/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/CLionProjects/Server/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled2.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/untitled2.dir/flags.make
 
 CMakeFiles/untitled2.dir/mainServer.cpp.o: CMakeFiles/untitled2.dir/flags.make
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../mainServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled2.dir/mainServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/mainServer.cpp.o -c /home/gal/CLionProjects/Server/mainServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled2.dir/mainServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/mainServer.cpp.o -c /home/yair/CLionProjects/Server/mainServer.cpp
 
 CMakeFiles/untitled2.dir/mainServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/mainServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/Server/mainServer.cpp > CMakeFiles/untitled2.dir/mainServer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/mainServer.cpp > CMakeFiles/untitled2.dir/mainServer.cpp.i
 
 CMakeFiles/untitled2.dir/mainServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/mainServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/Server/mainServer.cpp -o CMakeFiles/untitled2.dir/mainServer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/mainServer.cpp -o CMakeFiles/untitled2.dir/mainServer.cpp.s
 
 CMakeFiles/untitled2.dir/mainServer.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/untitled2.dir/mainServer.cpp.o.provides.build: CMakeFiles/untitled2.d
 
 CMakeFiles/untitled2.dir/Server.cpp.o: CMakeFiles/untitled2.dir/flags.make
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled2.dir/Server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/Server.cpp.o -c /home/gal/CLionProjects/Server/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled2.dir/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/Server.cpp.o -c /home/yair/CLionProjects/Server/Server.cpp
 
 CMakeFiles/untitled2.dir/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/Server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/Server/Server.cpp > CMakeFiles/untitled2.dir/Server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/Server.cpp > CMakeFiles/untitled2.dir/Server.cpp.i
 
 CMakeFiles/untitled2.dir/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/Server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/Server/Server.cpp -o CMakeFiles/untitled2.dir/Server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/Server.cpp -o CMakeFiles/untitled2.dir/Server.cpp.s
 
 CMakeFiles/untitled2.dir/Server.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/untitled2.dir/Server.cpp.o.provides.build: CMakeFiles/untitled2.dir/S
 
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: CMakeFiles/untitled2.dir/flags.make
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CommandsManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled2.dir/CommandsManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/CommandsManager.cpp.o -c /home/gal/CLionProjects/Server/CommandsManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled2.dir/CommandsManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/CommandsManager.cpp.o -c /home/yair/CLionProjects/Server/CommandsManager.cpp
 
 CMakeFiles/untitled2.dir/CommandsManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/CommandsManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/Server/CommandsManager.cpp > CMakeFiles/untitled2.dir/CommandsManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/CommandsManager.cpp > CMakeFiles/untitled2.dir/CommandsManager.cpp.i
 
 CMakeFiles/untitled2.dir/CommandsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/CommandsManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/Server/CommandsManager.cpp -o CMakeFiles/untitled2.dir/CommandsManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/CommandsManager.cpp -o CMakeFiles/untitled2.dir/CommandsManager.cpp.s
 
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/untitled2.dir/CommandsManager.cpp.o.provides.build: CMakeFiles/untitl
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: CMakeFiles/untitled2.dir/flags.make
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../StartCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled2.dir/StartCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/StartCommand.cpp.o -c /home/gal/CLionProjects/Server/StartCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled2.dir/StartCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/StartCommand.cpp.o -c /home/yair/CLionProjects/Server/StartCommand.cpp
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/StartCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gal/CLionProjects/Server/StartCommand.cpp > CMakeFiles/untitled2.dir/StartCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/StartCommand.cpp > CMakeFiles/untitled2.dir/StartCommand.cpp.i
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/StartCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gal/CLionProjects/Server/StartCommand.cpp -o CMakeFiles/untitled2.dir/StartCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/StartCommand.cpp -o CMakeFiles/untitled2.dir/StartCommand.cpp.s
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.o.requires:
 
@@ -153,12 +153,62 @@ CMakeFiles/untitled2.dir/StartCommand.cpp.o.provides: CMakeFiles/untitled2.dir/S
 CMakeFiles/untitled2.dir/StartCommand.cpp.o.provides.build: CMakeFiles/untitled2.dir/StartCommand.cpp.o
 
 
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: CMakeFiles/untitled2.dir/flags.make
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled2.dir/HandleClient.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/HandleClient.cpp.o -c /home/yair/CLionProjects/Server/HandleClient.cpp
+
+CMakeFiles/untitled2.dir/HandleClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/HandleClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/HandleClient.cpp > CMakeFiles/untitled2.dir/HandleClient.cpp.i
+
+CMakeFiles/untitled2.dir/HandleClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/HandleClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/HandleClient.cpp -o CMakeFiles/untitled2.dir/HandleClient.cpp.s
+
+CMakeFiles/untitled2.dir/HandleClient.cpp.o.requires:
+
+.PHONY : CMakeFiles/untitled2.dir/HandleClient.cpp.o.requires
+
+CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides: CMakeFiles/untitled2.dir/HandleClient.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides
+
+CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides.build: CMakeFiles/untitled2.dir/HandleClient.cpp.o
+
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.o: CMakeFiles/untitled2.dir/flags.make
+CMakeFiles/untitled2.dir/GameHandle.cpp.o: ../GameHandle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled2.dir/GameHandle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/GameHandle.cpp.o -c /home/yair/CLionProjects/Server/GameHandle.cpp
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/GameHandle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/GameHandle.cpp > CMakeFiles/untitled2.dir/GameHandle.cpp.i
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/GameHandle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/GameHandle.cpp -o CMakeFiles/untitled2.dir/GameHandle.cpp.s
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires:
+
+.PHONY : CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides: CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides
+
+CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides.build: CMakeFiles/untitled2.dir/GameHandle.cpp.o
+
+
 # Object files for target untitled2
 untitled2_OBJECTS = \
 "CMakeFiles/untitled2.dir/mainServer.cpp.o" \
 "CMakeFiles/untitled2.dir/Server.cpp.o" \
 "CMakeFiles/untitled2.dir/CommandsManager.cpp.o" \
-"CMakeFiles/untitled2.dir/StartCommand.cpp.o"
+"CMakeFiles/untitled2.dir/StartCommand.cpp.o" \
+"CMakeFiles/untitled2.dir/HandleClient.cpp.o" \
+"CMakeFiles/untitled2.dir/GameHandle.cpp.o"
 
 # External object files for target untitled2
 untitled2_EXTERNAL_OBJECTS =
@@ -167,9 +217,11 @@ untitled2: CMakeFiles/untitled2.dir/mainServer.cpp.o
 untitled2: CMakeFiles/untitled2.dir/Server.cpp.o
 untitled2: CMakeFiles/untitled2.dir/CommandsManager.cpp.o
 untitled2: CMakeFiles/untitled2.dir/StartCommand.cpp.o
+untitled2: CMakeFiles/untitled2.dir/HandleClient.cpp.o
+untitled2: CMakeFiles/untitled2.dir/GameHandle.cpp.o
 untitled2: CMakeFiles/untitled2.dir/build.make
 untitled2: CMakeFiles/untitled2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +233,8 @@ CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/mainServer.cpp.o.req
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/Server.cpp.o.requires
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/CommandsManager.cpp.o.requires
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/StartCommand.cpp.o.requires
+CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/HandleClient.cpp.o.requires
+CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
 
 .PHONY : CMakeFiles/untitled2.dir/requires
 
@@ -189,6 +243,6 @@ CMakeFiles/untitled2.dir/clean:
 .PHONY : CMakeFiles/untitled2.dir/clean
 
 CMakeFiles/untitled2.dir/depend:
-	cd /home/gal/CLionProjects/Server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gal/CLionProjects/Server /home/gal/CLionProjects/Server /home/gal/CLionProjects/Server/cmake-build-debug /home/gal/CLionProjects/Server/cmake-build-debug /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yair/CLionProjects/Server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yair/CLionProjects/Server /home/yair/CLionProjects/Server /home/yair/CLionProjects/Server/cmake-build-debug /home/yair/CLionProjects/Server/cmake-build-debug /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled2.dir/depend
 

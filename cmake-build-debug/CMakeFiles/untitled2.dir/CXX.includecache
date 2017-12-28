@@ -6,29 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 vector
 -
 string
 -
 
-/home/gal/CLionProjects/Server/CommandsManager.cpp
+/home/yair/CLionProjects/Server/CommandsManager.cpp
 CommandsManager.h
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 StartCommand.cpp
-/home/gal/CLionProjects/Server/StartCommand.cpp
+/home/yair/CLionProjects/Server/StartCommand.cpp
 
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 map
 -
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/Server.cpp
+/home/yair/CLionProjects/Server/HandleClient.cpp
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
+sys/types.h
+-
+unistd.h
+-
+sstream
+-
+vector
+-
+
+/home/yair/CLionProjects/Server/HandleClient.h
+iostream
+-
+CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
+
+/home/yair/CLionProjects/Server/Server.cpp
+sstream
+-
 Server.h
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 vector
 -
 pthread.h
@@ -45,16 +69,18 @@ string.h
 -
 iostream
 -
+CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 
-/home/gal/CLionProjects/Server/StartCommand.cpp
+/home/yair/CLionProjects/Server/StartCommand.cpp
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 iostream
 -
 
-/home/gal/CLionProjects/Server/mainServer.cpp
+/home/yair/CLionProjects/Server/mainServer.cpp
 Server.h
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 iostream
 -
 fstream

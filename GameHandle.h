@@ -1,0 +1,11 @@
+
+#ifndef UNTITLED2_GAMEHANDLE_H
+#define UNTITLED2_GAMEHANDLE_H
+
+
+class GameHandle {
+
+};
+
+
+#endif //UNTITLED2_GAMEHANDLE_H
