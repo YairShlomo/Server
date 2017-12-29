@@ -84,7 +84,7 @@ void HandleGame::handle() {
         }
 
 
-        commandsManager.executeCommand(command,tokens,clientInfo1,clientInfo2);
+        commandsManager.executeCommand(command,tokens,clientInfo1->clientSocket,clientInfo2->clientSocket);
         n = write(otherSocket, &buffer, sizeof(buffer));
         if (n == -1) {
             throw "Error writing to socket";

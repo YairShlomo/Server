@@ -12,7 +12,7 @@ class CommandsManager {
 public:
     CommandsManager(map<string,int> Games);
     ~CommandsManager();
-    void executeCommand(string command, vector<string> args, clientInfo* clientInfo1,clientInfo* clientInfo2);
+    void executeCommand(string command, vector<string> args, int clientsocket1,int clientsocket2);
 private:
     map<string, Command *> commandsMap;
     map<string,int> games;
