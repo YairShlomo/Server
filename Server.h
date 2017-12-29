@@ -22,7 +22,6 @@ public:
     void start();
     void stop();
 private:
-    CommandsManager commandsManager;
     int port;
     int serverSocket; // the socket's file descriptor
     static void* handleClient(void *clientSocket);

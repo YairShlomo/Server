@@ -177,28 +177,28 @@ CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides: CMakeFiles/untitled2.dir/H
 CMakeFiles/untitled2.dir/HandleClient.cpp.o.provides.build: CMakeFiles/untitled2.dir/HandleClient.cpp.o
 
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.o: CMakeFiles/untitled2.dir/flags.make
-CMakeFiles/untitled2.dir/GameHandle.cpp.o: ../GameHandle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled2.dir/GameHandle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/GameHandle.cpp.o -c /home/yair/CLionProjects/Server/GameHandle.cpp
+CMakeFiles/untitled2.dir/HandleGame.cpp.o: CMakeFiles/untitled2.dir/flags.make
+CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../HandleGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled2.dir/HandleGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled2.dir/HandleGame.cpp.o -c /home/yair/CLionProjects/Server/HandleGame.cpp
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/GameHandle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/GameHandle.cpp > CMakeFiles/untitled2.dir/GameHandle.cpp.i
+CMakeFiles/untitled2.dir/HandleGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled2.dir/HandleGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/CLionProjects/Server/HandleGame.cpp > CMakeFiles/untitled2.dir/HandleGame.cpp.i
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/GameHandle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/GameHandle.cpp -o CMakeFiles/untitled2.dir/GameHandle.cpp.s
+CMakeFiles/untitled2.dir/HandleGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled2.dir/HandleGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/CLionProjects/Server/HandleGame.cpp -o CMakeFiles/untitled2.dir/HandleGame.cpp.s
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires:
+CMakeFiles/untitled2.dir/HandleGame.cpp.o.requires:
 
-.PHONY : CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
+.PHONY : CMakeFiles/untitled2.dir/HandleGame.cpp.o.requires
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides: CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides.build
-.PHONY : CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides
+CMakeFiles/untitled2.dir/HandleGame.cpp.o.provides: CMakeFiles/untitled2.dir/HandleGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleGame.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled2.dir/HandleGame.cpp.o.provides
 
-CMakeFiles/untitled2.dir/GameHandle.cpp.o.provides.build: CMakeFiles/untitled2.dir/GameHandle.cpp.o
+CMakeFiles/untitled2.dir/HandleGame.cpp.o.provides.build: CMakeFiles/untitled2.dir/HandleGame.cpp.o
 
 
 # Object files for target untitled2
@@ -208,7 +208,7 @@ untitled2_OBJECTS = \
 "CMakeFiles/untitled2.dir/CommandsManager.cpp.o" \
 "CMakeFiles/untitled2.dir/StartCommand.cpp.o" \
 "CMakeFiles/untitled2.dir/HandleClient.cpp.o" \
-"CMakeFiles/untitled2.dir/GameHandle.cpp.o"
+"CMakeFiles/untitled2.dir/HandleGame.cpp.o"
 
 # External object files for target untitled2
 untitled2_EXTERNAL_OBJECTS =
@@ -218,7 +218,7 @@ untitled2: CMakeFiles/untitled2.dir/Server.cpp.o
 untitled2: CMakeFiles/untitled2.dir/CommandsManager.cpp.o
 untitled2: CMakeFiles/untitled2.dir/StartCommand.cpp.o
 untitled2: CMakeFiles/untitled2.dir/HandleClient.cpp.o
-untitled2: CMakeFiles/untitled2.dir/GameHandle.cpp.o
+untitled2: CMakeFiles/untitled2.dir/HandleGame.cpp.o
 untitled2: CMakeFiles/untitled2.dir/build.make
 untitled2: CMakeFiles/untitled2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled2"
@@ -234,7 +234,7 @@ CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/Server.cpp.o.require
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/CommandsManager.cpp.o.requires
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/StartCommand.cpp.o.requires
 CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/HandleClient.cpp.o.requires
-CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/GameHandle.cpp.o.requires
+CMakeFiles/untitled2.dir/requires: CMakeFiles/untitled2.dir/HandleGame.cpp.o.requires
 
 .PHONY : CMakeFiles/untitled2.dir/requires
 

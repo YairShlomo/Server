@@ -6,7 +6,7 @@
 #include <vector>
 
 using namespace std;
-
+#define MAX 100;
 HandleClient::HandleClient():commandsManager(games) {
     pthread_mutex_init(&lock,0);
 }
@@ -19,10 +19,10 @@ void HandleClient::run(int clientSocket) {
     cout <<clientSocket << endl;
     pthread_t thread;
     //gameThreads.push_back(thread);
-    clientInfo* clientInfo=new clientInfo;
-    clientInfo->clientSocket=clientSocket;
-    clientInfo->handleClient = this;
-    int gT = pthread_create(&thread, NULL,  gate, (void *)clientInfo);
+    clientInfo* clientinfo1=new clientInfo;
+    clientinfo1->clientSocket=clientSocket;
+    clientinfo1->handleClient = this;
+    int gT = pthread_create(&thread, NULL,  gate, (void *)clientinfo1);
     //handleClient(clientSocket);
     //close(clientSocket);
 }
@@ -33,22 +33,23 @@ void* HandleClient::gate(void* elm) {
 
 void HandleClient::handle(void* elm){
     clientInfo* info =(clientInfo*)elm;
-    string myCommand;
-    string command;
-    vector<string> tokens = getCommand(info->clientSocket,myCommand,command);
-    pthread_mutex_lock(&lock);
-    commandsManager.executeCommand(command,tokens,info);
-    pthread_mutex_unlock(&lock);
+    char buffer[100];
 
+    //string myCommand;
+    string command;
+    vector<string> tokens = getCommand(info->clientSocket,command,buffer);
+    pthread_mutex_lock(&lock);
+    commandsManager.executeCommand(command,tokens,info,NULL);
+    pthread_mutex_unlock(&lock);
 }
-vector<string> getCommand(int clientSocket,string myCommand,string command) {
+vector<string> HandleClient::getCommand(int clientSocket,string &command,char* buffer) {
     vector<string> tokens;
     int n;
-    n = read(clientSocket, &myCommand, sizeof(myCommand));
+    n = read(clientSocket, &buffer, sizeof(buffer));
     if (n == -1) {
-        cout << "Error reading" << endl;
-        return NULL;
+        throw "Error reading";
     }
+    string myCommand(buffer);
     string buf;
     stringstream ss(myCommand);
     ss >> command;
@@ -58,9 +59,11 @@ vector<string> getCommand(int clientSocket,string myCommand,string command) {
     tokens.erase(tokens.begin());
     return tokens;
 }
+/*
 void HandleClient::closeAll(){
-    ClientInfo* info;
+    clientInfo* info;
     string args;
     commandsManager.executeCommand(command,tokens);
 
 }
+*/

@@ -93,16 +93,16 @@
 		<Unit filename="/home/yair/CLionProjects/Server/CommandsManager.h">
 			<Option target="untitled2"/>
 		</Unit>
-		<Unit filename="/home/yair/CLionProjects/Server/GameHandle.cpp">
-			<Option target="untitled2"/>
-		</Unit>
-		<Unit filename="/home/yair/CLionProjects/Server/GameHandle.h">
-			<Option target="untitled2"/>
-		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/HandleClient.cpp">
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/HandleClient.h">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/Server/HandleGame.cpp">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/yair/CLionProjects/Server/HandleGame.h">
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/yair/CLionProjects/Server/Server.cpp">

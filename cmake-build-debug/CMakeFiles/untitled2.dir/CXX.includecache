@@ -23,8 +23,6 @@ map
 -
 Command.h
 /home/yair/CLionProjects/Server/Command.h
-HandleClient.h
-/home/yair/CLionProjects/Server/HandleClient.h
 
 /home/yair/CLionProjects/Server/HandleClient.cpp
 HandleClient.h
@@ -43,6 +41,22 @@ iostream
 -
 CommandsManager.h
 /home/yair/CLionProjects/Server/CommandsManager.h
+
+/home/yair/CLionProjects/Server/HandleGame.cpp
+unistd.h
+-
+cstring
+-
+sstream
+-
+HandleGame.h
+/home/yair/CLionProjects/Server/HandleGame.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
+
+/home/yair/CLionProjects/Server/HandleGame.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
 /home/yair/CLionProjects/Server/Server.cpp
 sstream
@@ -75,6 +89,8 @@ CommandsManager.h
 /home/yair/CLionProjects/Server/StartCommand.cpp
 Command.h
 /home/yair/CLionProjects/Server/Command.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 iostream
 -
 
