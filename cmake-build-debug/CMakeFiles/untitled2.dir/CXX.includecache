@@ -79,6 +79,8 @@ HandleGame.h
 /home/gal/CLionProjects/Server/HandleGame.h
 iostream
 -
+sys/socket.h
+-
 
 /home/gal/CLionProjects/Server/ListCommand.cpp
 Command.h
@@ -123,6 +125,8 @@ CommandsManager.h
 /home/gal/CLionProjects/Server/CommandsManager.h
 
 /home/gal/CLionProjects/Server/StartCommand.cpp
+sys/socket.h
+-
 Command.h
 /home/gal/CLionProjects/Server/Command.h
 HandleClient.h

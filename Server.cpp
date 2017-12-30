@@ -16,7 +16,7 @@ Server::Server(int port): port(port), serverSocket(0) {
     cout << "Server" << endl;
 }
 void Server::start() {
-
+    int name;
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket < 0) {
@@ -43,6 +43,7 @@ void Server::start() {
 
     pthread_t thread;
     int rc = pthread_create(&thread, NULL, listening, (void *)serverSocket);
+    cin >> name;
     /* while (true) {
         //int rc = pthread_create(&threads[0], NULL, printHello, NULL);
 
@@ -80,17 +81,17 @@ void Server::start() {
         close(clientSocket);
         i++;
     }*/
-    pthread_exit(NULL);
+   // pthread_exit(NULL);
 }
 void* Server::listening(void *sSocket) {
     struct sockaddr_in clientAddress;
-    long serverSocket = (long)sSocket;
+    long serversocket = (long)sSocket;
     socklen_t clientAddressLen = sizeof(clientAddress);
-    vector<pthread_t> gameThreads;
+    //vector<pthread_t> gameThreads;
     while (true) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
-        int clientSocket = accept(serverSocket, (struct
+        int clientSocket = accept(serversocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
         HandleClient handleClient;
         handleClient.run(clientSocket);
