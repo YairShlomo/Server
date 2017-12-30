@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gal/CLionProjects/Server/CloseCommand.cpp">
+			<Option target="untitled2"/>
+		</Unit>
 		<Unit filename="/home/gal/CLionProjects/Server/Command.h">
 			<Option target="untitled2"/>
 		</Unit>
@@ -103,6 +106,15 @@
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/gal/CLionProjects/Server/HandleGame.h">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/gal/CLionProjects/Server/JoinCommand.cpp">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/gal/CLionProjects/Server/ListCommand.cpp">
+			<Option target="untitled2"/>
+		</Unit>
+		<Unit filename="/home/gal/CLionProjects/Server/PlayCommand.cpp">
 			<Option target="untitled2"/>
 		</Unit>
 		<Unit filename="/home/gal/CLionProjects/Server/Server.cpp">

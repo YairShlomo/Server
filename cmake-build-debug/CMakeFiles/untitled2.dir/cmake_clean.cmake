@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled2.dir/StartCommand.cpp.o"
   "CMakeFiles/untitled2.dir/HandleClient.cpp.o"
   "CMakeFiles/untitled2.dir/HandleGame.cpp.o"
+  "CMakeFiles/untitled2.dir/CloseCommand.cpp.o"
+  "CMakeFiles/untitled2.dir/PlayCommand.cpp.o"
+  "CMakeFiles/untitled2.dir/JoinCommand.cpp.o"
+  "CMakeFiles/untitled2.dir/ListCommand.cpp.o"
   "untitled2.pdb"
   "untitled2"
 )

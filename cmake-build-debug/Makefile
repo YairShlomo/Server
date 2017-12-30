@@ -123,6 +123,33 @@ untitled2/fast:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/build
 .PHONY : untitled2/fast
 
+CloseCommand.o: CloseCommand.cpp.o
+
+.PHONY : CloseCommand.o
+
+# target to build an object file
+CloseCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CloseCommand.cpp.o
+.PHONY : CloseCommand.cpp.o
+
+CloseCommand.i: CloseCommand.cpp.i
+
+.PHONY : CloseCommand.i
+
+# target to preprocess a source file
+CloseCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CloseCommand.cpp.i
+.PHONY : CloseCommand.cpp.i
+
+CloseCommand.s: CloseCommand.cpp.s
+
+.PHONY : CloseCommand.s
+
+# target to generate assembly for a file
+CloseCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/CloseCommand.cpp.s
+.PHONY : CloseCommand.cpp.s
+
 CommandsManager.o: CommandsManager.cpp.o
 
 .PHONY : CommandsManager.o
@@ -203,6 +230,87 @@ HandleGame.s: HandleGame.cpp.s
 HandleGame.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/HandleGame.cpp.s
 .PHONY : HandleGame.cpp.s
+
+JoinCommand.o: JoinCommand.cpp.o
+
+.PHONY : JoinCommand.o
+
+# target to build an object file
+JoinCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/JoinCommand.cpp.o
+.PHONY : JoinCommand.cpp.o
+
+JoinCommand.i: JoinCommand.cpp.i
+
+.PHONY : JoinCommand.i
+
+# target to preprocess a source file
+JoinCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/JoinCommand.cpp.i
+.PHONY : JoinCommand.cpp.i
+
+JoinCommand.s: JoinCommand.cpp.s
+
+.PHONY : JoinCommand.s
+
+# target to generate assembly for a file
+JoinCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/JoinCommand.cpp.s
+.PHONY : JoinCommand.cpp.s
+
+ListCommand.o: ListCommand.cpp.o
+
+.PHONY : ListCommand.o
+
+# target to build an object file
+ListCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ListCommand.cpp.o
+.PHONY : ListCommand.cpp.o
+
+ListCommand.i: ListCommand.cpp.i
+
+.PHONY : ListCommand.i
+
+# target to preprocess a source file
+ListCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ListCommand.cpp.i
+.PHONY : ListCommand.cpp.i
+
+ListCommand.s: ListCommand.cpp.s
+
+.PHONY : ListCommand.s
+
+# target to generate assembly for a file
+ListCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ListCommand.cpp.s
+.PHONY : ListCommand.cpp.s
+
+PlayCommand.o: PlayCommand.cpp.o
+
+.PHONY : PlayCommand.o
+
+# target to build an object file
+PlayCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/PlayCommand.cpp.o
+.PHONY : PlayCommand.cpp.o
+
+PlayCommand.i: PlayCommand.cpp.i
+
+.PHONY : PlayCommand.i
+
+# target to preprocess a source file
+PlayCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/PlayCommand.cpp.i
+.PHONY : PlayCommand.cpp.i
+
+PlayCommand.s: PlayCommand.cpp.s
+
+.PHONY : PlayCommand.s
+
+# target to generate assembly for a file
+PlayCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/PlayCommand.cpp.s
+.PHONY : PlayCommand.cpp.s
 
 Server.o: Server.cpp.o
 
@@ -294,6 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled2"
+	@echo "... CloseCommand.o"
+	@echo "... CloseCommand.i"
+	@echo "... CloseCommand.s"
 	@echo "... CommandsManager.o"
 	@echo "... CommandsManager.i"
 	@echo "... CommandsManager.s"
@@ -303,6 +414,15 @@ help:
 	@echo "... HandleGame.o"
 	@echo "... HandleGame.i"
 	@echo "... HandleGame.s"
+	@echo "... JoinCommand.o"
+	@echo "... JoinCommand.i"
+	@echo "... JoinCommand.s"
+	@echo "... ListCommand.o"
+	@echo "... ListCommand.i"
+	@echo "... ListCommand.s"
+	@echo "... PlayCommand.o"
+	@echo "... PlayCommand.i"
+	@echo "... PlayCommand.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

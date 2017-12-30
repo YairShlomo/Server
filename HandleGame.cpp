@@ -45,14 +45,13 @@ void HandleGame::handle() {
     string command;
     while (true) {
         if (turn) {
-            currentSocket = clientSocket1;
-            otherSocket = clientSocket2;
+            currentSocket = clientInfo1->clientSocket;
+            otherSocket = clientInfo2->clientSocket;
         } else {
-            currentSocket = clientSocket2;
-            otherSocket = clientSocket1;
+            currentSocket = clientInfo2->clientSocket;
+            otherSocket = clientInfo1->clientSocket;
         }
-        //n = read(currentSocket, &buffer, sizeof(buffer));
-        vector<string> tokens = getCommand(currentSocket,command,buffer);
+        n = read(currentSocket, &buffer, sizeof(buffer));
         if (n == -1) {
             cout << "Error reading" << endl;
             return;
@@ -66,7 +65,8 @@ void HandleGame::handle() {
             cout << "Client disconnected" << endl;
             return;
         }
-        if (strcmp(buffer, "End") == 0) {
+        vector<string> tokens = getCommand(currentSocket,command,buffer);
+       /* if (strcmp(buffer, "End") == 0) {
             close(clientSocket1);
             close(clientSocket2);
             //close(serverSocket);
@@ -81,18 +81,18 @@ void HandleGame::handle() {
             close(clientSocket2);
             //close(serverSocket);
             return;
-        }
+        }*/
 
 
-        commandsManager.executeCommand(command,tokens,clientInfo1->clientSocket,clientInfo2->clientSocket);
-        n = write(otherSocket, &buffer, sizeof(buffer));
+        commandsManager.executeCommand(command,tokens,currentSocket,otherSocket);
+       /* n = write(otherSocket, &buffer, sizeof(buffer));
         if (n == -1) {
             throw "Error writing to socket";
-        }
+        }*/
         turn = !turn;
     }
 }
-vector<string> HandleClient::getCommand(int clientSocket,string &command,char* buffer) {
+vector<string> HandleGame::getCommand(int clientSocket,string &command,char* buffer) {
     vector<string> tokens;
     int n;
     n = read(clientSocket, &buffer, sizeof(buffer));

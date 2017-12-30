@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/gal/CLionProjects/Server/CloseCommand.cpp
+Command.h
+/home/gal/CLionProjects/Server/Command.h
+HandleClient.h
+/home/gal/CLionProjects/Server/HandleClient.h
+
 /home/gal/CLionProjects/Server/Command.h
 vector
 -
@@ -13,12 +19,18 @@ string
 -
 map
 -
+boost/iostreams/read.hpp
+-
 
 /home/gal/CLionProjects/Server/CommandsManager.cpp
 CommandsManager.h
 /home/gal/CLionProjects/Server/CommandsManager.h
 StartCommand.cpp
 /home/gal/CLionProjects/Server/StartCommand.cpp
+CloseCommand.cpp
+/home/gal/CLionProjects/Server/CloseCommand.cpp
+PlayCommand.cpp
+/home/gal/CLionProjects/Server/PlayCommand.cpp
 
 /home/gal/CLionProjects/Server/CommandsManager.h
 map
@@ -60,6 +72,28 @@ HandleClient.h
 HandleClient.h
 /home/gal/CLionProjects/Server/HandleClient.h
 
+/home/gal/CLionProjects/Server/JoinCommand.cpp
+Command.h
+/home/gal/CLionProjects/Server/Command.h
+HandleGame.h
+/home/gal/CLionProjects/Server/HandleGame.h
+iostream
+-
+
+/home/gal/CLionProjects/Server/ListCommand.cpp
+Command.h
+/home/gal/CLionProjects/Server/Command.h
+HandleGame.h
+/home/gal/CLionProjects/Server/HandleGame.h
+iostream
+-
+
+/home/gal/CLionProjects/Server/PlayCommand.cpp
+Command.h
+/home/gal/CLionProjects/Server/Command.h
+HandleClient.h
+/home/gal/CLionProjects/Server/HandleClient.h
+
 /home/gal/CLionProjects/Server/Server.cpp
 sstream
 -
@@ -93,8 +127,6 @@ Command.h
 /home/gal/CLionProjects/Server/Command.h
 HandleClient.h
 /home/gal/CLionProjects/Server/HandleClient.h
-iostream
--
 
 /home/gal/CLionProjects/Server/mainServer.cpp
 Server.h

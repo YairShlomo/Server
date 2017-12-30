@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/gal/CLionProjects/Server/CloseCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/CloseCommand.cpp.o"
   "/home/gal/CLionProjects/Server/CommandsManager.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o"
   "/home/gal/CLionProjects/Server/HandleClient.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/HandleClient.cpp.o"
   "/home/gal/CLionProjects/Server/HandleGame.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/HandleGame.cpp.o"
+  "/home/gal/CLionProjects/Server/JoinCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/JoinCommand.cpp.o"
+  "/home/gal/CLionProjects/Server/ListCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/ListCommand.cpp.o"
+  "/home/gal/CLionProjects/Server/PlayCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/PlayCommand.cpp.o"
   "/home/gal/CLionProjects/Server/Server.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o"
   "/home/gal/CLionProjects/Server/StartCommand.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o"
   "/home/gal/CLionProjects/Server/mainServer.cpp" "/home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/untitled2.dir/mainServer.cpp.o"
