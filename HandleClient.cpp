@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <sstream>
 #include <vector>
+#include <sys/socket.h>
 
 using namespace std;
 #define MAX 100;
@@ -17,6 +18,11 @@ void HandleClient::run(int clientSocket) {
         throw "Error accepting client";
     }
     cout <<clientSocket << endl;
+    char approval[2] = {'1'};
+    int sendApproval = send(clientSocket, &approval[0], 1, 0);
+    if (sendApproval < 0) {
+        throw "error sending to client";
+    }
     pthread_t thread;
     //gameThreads.push_back(thread);
     clientInfo* clientinfo1=new clientInfo;

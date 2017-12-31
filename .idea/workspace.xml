@@ -12,14 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09d06c93-14f3-46b6-af23-230e81dfb8da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/CloseCommand.cpp" afterPath="$PROJECT_DIR$/CloseCommand.cpp" />
-      <change beforePath="$PROJECT_DIR$/Command.h" afterPath="$PROJECT_DIR$/Command.h" />
-      <change beforePath="$PROJECT_DIR$/CommandsManager.h" afterPath="$PROJECT_DIR$/CommandsManager.h" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HandleClient.cpp" afterPath="$PROJECT_DIR$/HandleClient.cpp" />
-      <change beforePath="$PROJECT_DIR$/HandleClient.h" afterPath="$PROJECT_DIR$/HandleClient.h" />
-      <change beforePath="$PROJECT_DIR$/PlayCommand.cpp" afterPath="$PROJECT_DIR$/PlayCommand.cpp" />
-      <change beforePath="$PROJECT_DIR$/Server.cpp" afterPath="$PROJECT_DIR$/Server.cpp" />
-      <change beforePath="$PROJECT_DIR$/Server.h" afterPath="$PROJECT_DIR$/Server.h" />
+      <change beforePath="$PROJECT_DIR$/ListCommand.cpp" afterPath="$PROJECT_DIR$/ListCommand.cpp" />
+      <change beforePath="$PROJECT_DIR$/StartCommand.cpp" afterPath="$PROJECT_DIR$/StartCommand.cpp" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" />
@@ -35,16 +31,16 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CloseCommand.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CloseCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CloseCommand.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/CommandsManager.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleClient.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleGame.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/JoinCommand.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/ListCommand.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/PlayCommand.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleClient.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleClient.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleGame.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/HandleGame.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/JoinCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/JoinCommand.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/ListCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/ListCommand.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/PlayCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/PlayCommand.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/Server.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/StartCommand.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/build.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/mainServer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled2.dir/mainServer.cpp.o" />
@@ -64,60 +60,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server.h">
+      <file leaf-file-name="HandleClient.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HandleClient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
               <folding>
-                <element signature="e#99#115#0" expanded="true" />
+                <element signature="e#1#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server.cpp">
+      <file leaf-file-name="ListCommand.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ListCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="263">
+              <caret line="16" column="84" lean-forward="false" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
               <folding>
-                <element signature="e#66#84#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Command.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Command.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding>
-                <element signature="e#39#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CloseCommand.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CloseCommand.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandsManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CommandsManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +87,7 @@
       <file leaf-file-name="PlayCommand.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="162">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -134,48 +96,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HandleGame.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HandleGame.h">
+      <file leaf-file-name="JoinCommand.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="216">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HandleGame.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HandleGame.cpp">
+      <file leaf-file-name="CommandsManager.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CommandsManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-974">
-              <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding>
-                <element signature="e#2#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandleClient.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HandleClient.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandleClient.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HandleClient.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="e#46#65#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,8 +133,6 @@
         <option value="$PROJECT_DIR$/HandleGame.h" />
         <option value="$PROJECT_DIR$/CommandsManager.cpp" />
         <option value="$PROJECT_DIR$/HandleGame.cpp" />
-        <option value="$PROJECT_DIR$/ListCommand.cpp" />
-        <option value="$PROJECT_DIR$/StartCommand.cpp" />
         <option value="$PROJECT_DIR$/JoinCommand.cpp" />
         <option value="$PROJECT_DIR$/Command.h" />
         <option value="$PROJECT_DIR$/CloseCommand.cpp" />
@@ -207,7 +141,9 @@
         <option value="$PROJECT_DIR$/Server.h" />
         <option value="$PROJECT_DIR$/Server.cpp" />
         <option value="$PROJECT_DIR$/HandleClient.h" />
+        <option value="$PROJECT_DIR$/StartCommand.cpp" />
         <option value="$PROJECT_DIR$/HandleClient.cpp" />
+        <option value="$PROJECT_DIR$/ListCommand.cpp" />
       </list>
     </option>
   </component>
@@ -246,10 +182,6 @@
             <path>
               <item name="untitled2" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled2" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -317,7 +249,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180828000" />
+    <option name="totallyTimeSpent" value="185515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,16 +264,17 @@
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2490392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34234235" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784432" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2488263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32659408" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659408" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21321322" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30482116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -393,13 +326,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/HandleClient.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
@@ -423,9 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -442,7 +366,7 @@
         <state relative-caret-position="108">
           <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -467,9 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -478,7 +400,7 @@
         <state relative-caret-position="360">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -488,9 +410,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -515,7 +435,7 @@
         <state relative-caret-position="252">
           <caret line="41" column="61" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="61" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,9 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -551,7 +469,7 @@
         <state relative-caret-position="360">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,9 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +504,7 @@
         <state relative-caret-position="313">
           <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="27" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,9 +529,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#115#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +538,7 @@
         <state relative-caret-position="360">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -665,57 +579,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayCommand.h" />
-    <entry file="file://$PROJECT_DIR$/ListCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommandsManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-            <marker date="1514720321756" expanded="true" signature="539:545" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CloseCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlayCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -729,14 +596,6 @@
           <folding>
             <element signature="e#39#56#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommandsManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,40 +619,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="36">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="96" column="37" lean-forward="false" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
           <folding>
-            <element signature="e#99#115#0" expanded="true" />
+            <element signature="e#66#84#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HandleClient.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#46#65#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="141">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server.cpp">
+    <entry file="file://$PROJECT_DIR$/CommandsManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#66#84#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HandleClient.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
           <folding>
             <element signature="e#1#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommandsManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="16" column="84" lean-forward="false" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
