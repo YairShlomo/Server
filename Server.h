@@ -21,6 +21,7 @@ public:
     Server(int port);
     void start();
     void stop();
+    map<string,int> games;
 private:
     int port;
     int serverSocket; // the socket's file descriptor
@@ -30,5 +31,8 @@ private:
     void execute(string myCommand);
 
 };
-
+struct ThreadArgs {
+    int serverSocket;
+    CommandsManager* commandsManager;
+};
 #endif //SERVER_H

@@ -10,7 +10,7 @@ class  clientInfo;
 
 class CommandsManager {
 public:
-    CommandsManager(map<string,int> Games);
+    CommandsManager(map<string,int> games);
     ~CommandsManager();
     void executeCommand(string command, vector<string> args, int clientsocket1,int clientsocket2);
 private:

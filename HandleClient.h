@@ -11,10 +11,10 @@ private:
     pthread_mutex_t lock;
     pthread_mutex_t killAllLock;
     vector<pthread_t> threads;
-    CommandsManager commandsManager;
+    CommandsManager* commandsManager;
     map<string,int> games;
 public:
-    HandleClient();
+    HandleClient(CommandsManager* commandsManager);
     void run(int clientSocket);
     static void* gate(void* elm);
     void handle(void* elm);

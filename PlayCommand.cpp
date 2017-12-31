@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "Command.h"
 #include "HandleClient.h"
 

@@ -12,7 +12,7 @@ ID: 305216962
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
 map <string,int> Game;
-Server::Server(int port): port(port), serverSocket(0) {
+Server::Server(int port): port(port), serverSocket(0),games() {
     cout << "Server" << endl;
 }
 void Server::start() {
@@ -40,9 +40,12 @@ void Server::start() {
     }
 
    // socklen_t clientAddressLen2 = sizeof(clientAddress);
-
+    CommandsManager* commandsManager=new CommandsManager(games);
+    ThreadArgs* threadArgs = new ThreadArgs;
+    threadArgs->serverSocket=serverSocket;
+    threadArgs->commandsManager=commandsManager;
     pthread_t thread;
-    int rc = pthread_create(&thread, NULL, listening, (void *)serverSocket);
+    int rc = pthread_create(&thread, NULL, listening, (void *)threadArgs);
     cin >> name;
     /* while (true) {
         //int rc = pthread_create(&threads[0], NULL, printHello, NULL);
@@ -83,17 +86,18 @@ void Server::start() {
     }*/
    // pthread_exit(NULL);
 }
-void* Server::listening(void *sSocket) {
+void* Server::listening(void *threadArgs) {
     struct sockaddr_in clientAddress;
-    long serversocket = (long)sSocket;
+    //long serversocket = (long)sSocket;
+    ThreadArgs* threadArgs1=(ThreadArgs*)threadArgs;
     socklen_t clientAddressLen = sizeof(clientAddress);
     //vector<pthread_t> gameThreads;
     while (true) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
-        int clientSocket = accept(serversocket, (struct
+        int clientSocket = accept(threadArgs1->serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
-        HandleClient handleClient;
+        HandleClient handleClient(threadArgs1->commandsManager);
         handleClient.run(clientSocket);
     }
 }

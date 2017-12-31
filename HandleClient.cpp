@@ -7,7 +7,7 @@
 
 using namespace std;
 #define MAX 100;
-HandleClient::HandleClient():commandsManager(games) {
+HandleClient::HandleClient(CommandsManager* commandsManager):commandsManager(commandsManager) {
     pthread_mutex_init(&lock,0);
 }
 
@@ -39,7 +39,7 @@ void HandleClient::handle(void* elm){
     string command;
     vector<string> tokens = getCommand(info->clientSocket,command,buffer);
     pthread_mutex_lock(&lock);
-    commandsManager.executeCommand(command,tokens,info->clientSocket,-1);
+    commandsManager->executeCommand(command,tokens,info->clientSocket,-1);
     pthread_mutex_unlock(&lock);
 }
 vector<string> HandleClient::getCommand(int clientSocket,string &command,char* buffer) {
