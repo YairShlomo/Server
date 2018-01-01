@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/gal/CLionProjects/Server/CloseCommand.cpp
+/home/yair/CLionProjects/Server/CloseCommand.cpp
 unistd.h
 -
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 vector
 -
 string
@@ -22,29 +22,29 @@ string
 map
 -
 
-/home/gal/CLionProjects/Server/CommandsManager.cpp
+/home/yair/CLionProjects/Server/CommandsManager.cpp
 CommandsManager.h
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 StartCommand.cpp
-/home/gal/CLionProjects/Server/StartCommand.cpp
+/home/yair/CLionProjects/Server/StartCommand.cpp
 CloseCommand.cpp
-/home/gal/CLionProjects/Server/CloseCommand.cpp
+/home/yair/CLionProjects/Server/CloseCommand.cpp
 PlayCommand.cpp
-/home/gal/CLionProjects/Server/PlayCommand.cpp
+/home/yair/CLionProjects/Server/PlayCommand.cpp
 ListCommand.cpp
-/home/gal/CLionProjects/Server/ListCommand.cpp
+/home/yair/CLionProjects/Server/ListCommand.cpp
 JoinCommand.cpp
-/home/gal/CLionProjects/Server/JoinCommand.cpp
+/home/yair/CLionProjects/Server/JoinCommand.cpp
 
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 map
 -
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 
-/home/gal/CLionProjects/Server/HandleClient.cpp
+/home/yair/CLionProjects/Server/HandleClient.cpp
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 sys/types.h
 -
 unistd.h
@@ -56,67 +56,71 @@ vector
 sys/socket.h
 -
 
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 iostream
 -
 CommandsManager.h
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 
-/home/gal/CLionProjects/Server/HandleGame.cpp
+/home/yair/CLionProjects/Server/HandleGame.cpp
 unistd.h
 -
 cstring
 -
 sstream
 -
+sys/socket.h
+-
 HandleGame.h
-/home/gal/CLionProjects/Server/HandleGame.h
+/home/yair/CLionProjects/Server/HandleGame.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/HandleGame.h
+/home/yair/CLionProjects/Server/HandleGame.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/JoinCommand.cpp
+/home/yair/CLionProjects/Server/JoinCommand.cpp
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 HandleGame.h
-/home/gal/CLionProjects/Server/HandleGame.h
+/home/yair/CLionProjects/Server/HandleGame.h
 iostream
 -
 sys/socket.h
 -
+unistd.h
+-
 
-/home/gal/CLionProjects/Server/ListCommand.cpp
+/home/yair/CLionProjects/Server/ListCommand.cpp
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 HandleGame.h
-/home/gal/CLionProjects/Server/HandleGame.h
+/home/yair/CLionProjects/Server/HandleGame.h
 iostream
 -
 cstring
 -
-boost/iostreams/write.hpp
+unistd.h
 -
 
-/home/gal/CLionProjects/Server/PlayCommand.cpp
+/home/yair/CLionProjects/Server/PlayCommand.cpp
 unistd.h
 -
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/Server.cpp
+/home/yair/CLionProjects/Server/Server.cpp
 sstream
 -
 Server.h
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 vector
 -
 pthread.h
@@ -134,19 +138,21 @@ string.h
 iostream
 -
 CommandsManager.h
-/home/gal/CLionProjects/Server/CommandsManager.h
+/home/yair/CLionProjects/Server/CommandsManager.h
 
-/home/gal/CLionProjects/Server/StartCommand.cpp
+/home/yair/CLionProjects/Server/StartCommand.cpp
 sys/socket.h
 -
+unistd.h
+-
 Command.h
-/home/gal/CLionProjects/Server/Command.h
+/home/yair/CLionProjects/Server/Command.h
 HandleClient.h
-/home/gal/CLionProjects/Server/HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 
-/home/gal/CLionProjects/Server/mainServer.cpp
+/home/yair/CLionProjects/Server/mainServer.cpp
 Server.h
-/home/gal/CLionProjects/Server/Server.h
+/home/yair/CLionProjects/Server/Server.h
 iostream
 -
 fstream

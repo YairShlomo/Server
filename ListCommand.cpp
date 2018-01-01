@@ -2,7 +2,7 @@
 #include "HandleGame.h"
 #include <iostream>
 #include <cstring>
-#include <boost/iostreams/write.hpp>
+#include <unistd.h>
 
 using namespace std;
 
@@ -12,17 +12,22 @@ class ListCommand: public Command {
         for(map<string,int>::iterator it = games.begin(); it != games.end(); ++it) {
             cout << it->first << "\n";
         }*/
-        char buffer[50];
         int sendByte;
+        char listGame[11]={"list_games"};
+        sendByte = write(clientSocket1, &listGame, sizeof(listGame));
+
         for(map<string,int>::iterator it = games.begin(); it != games.end(); ++it) {
+            char buffer[sizeof(it->first.c_str())+1];
             strcpy(buffer,it->first.c_str());
+            cout << buffer << "\n";
+
             sendByte = write(clientSocket1, &buffer, sizeof(buffer));
             if (sendByte < 0) {
                 throw "error sending to client";
             }
         }
-        buffer[0] = '0';
-        sendByte = write(clientSocket1, &buffer[0], 1);
+        char bufferEnd[2] = {"0"};
+        sendByte = write(clientSocket1, &bufferEnd[0], 1);
         if (sendByte < 0) {
             throw "error sending to client";
         }

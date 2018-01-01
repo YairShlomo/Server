@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <cstring>
 #include <sstream>
+#include <sys/socket.h>
 #include "HandleGame.h"
 #include "HandleClient.h"
 HandleGame::HandleGame(int clientSocket1,int clientSocket2,CommandsManager commandsManager):
@@ -45,13 +46,14 @@ void HandleGame::handle() {
     string command;
     while (true) {
         if (turn) {
-            currentSocket = clientInfo1->clientSocket;
-            otherSocket = clientInfo2->clientSocket;
+            currentSocket = clientSocket1;
+            otherSocket = clientSocket2;
         } else {
-            currentSocket = clientInfo2->clientSocket;
-            otherSocket = clientInfo1->clientSocket;
+            currentSocket = clientSocket2;
+            otherSocket = clientSocket1;
         }
-        n = read(currentSocket, &buffer, sizeof(buffer));
+
+        n = recv(currentSocket, &buffer, sizeof(buffer),0);
         if (n == -1) {
             cout << "Error reading" << endl;
             return;
