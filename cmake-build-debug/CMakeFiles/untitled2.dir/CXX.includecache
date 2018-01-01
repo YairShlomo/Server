@@ -103,6 +103,10 @@ cstring
 -
 unistd.h
 -
+sys/socket.h
+-
+sstream
+-
 
 /home/yair/CLionProjects/Server/PlayCommand.cpp
 unistd.h

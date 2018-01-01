@@ -16,7 +16,7 @@ Server::Server(int port): port(port), serverSocket(0),games() {
     cout << "Server" << endl;
 }
 void Server::start() {
-    int name;
+    char* name;
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket < 0) {
@@ -44,9 +44,17 @@ void Server::start() {
     ThreadArgs* threadArgs = new ThreadArgs;
     threadArgs->serverSocket=serverSocket;
     threadArgs->commandsManager=commandsManager;
+    vector<int> clients;
+    threadArgs->clients=clients;
     pthread_t thread;
     int rc = pthread_create(&thread, NULL, listening, (void *)threadArgs);
     cin >> name;
+    if (strcmp(name,"exit")==0) {
+        for (vector<int>::iterator it = threadArgs->clients.begin() ; it != threadArgs->clients.end(); ++it)
+            close(*it);
+            //cout <<it  ;
+        cout << '\n';
+    }
     /* while (true) {
         //int rc = pthread_create(&threads[0], NULL, printHello, NULL);
 
@@ -91,12 +99,14 @@ void* Server::listening(void *threadArgs) {
     //long serversocket = (long)sSocket;
     ThreadArgs* threadArgs1=(ThreadArgs*)threadArgs;
     socklen_t clientAddressLen = sizeof(clientAddress);
-    //vector<pthread_t> gameThreads;
+    vector<pthread_t> gameThreads;
+
     while (true) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
         int clientSocket = accept(threadArgs1->serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
+        threadArgs1->clients.push_back(clientSocket);
         HandleClient handleClient(threadArgs1->commandsManager);
         handleClient.run(clientSocket);
     }

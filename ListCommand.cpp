@@ -3,6 +3,8 @@
 #include <iostream>
 #include <cstring>
 #include <unistd.h>
+#include <sys/socket.h>
+#include <sstream>
 
 using namespace std;
 
@@ -12,6 +14,7 @@ class ListCommand: public Command {
         for(map<string,int>::iterator it = games.begin(); it != games.end(); ++it) {
             cout << it->first << "\n";
         }*/
+        CommandsManager commandsManager(games);
         int sendByte;
         char listGame[11]={"list_games"};
         sendByte = write(clientSocket1, &listGame, sizeof(listGame));
@@ -31,5 +34,23 @@ class ListCommand: public Command {
         if (sendByte < 0) {
             throw "error sending to client";
         }
+        vector<string> tokens;
+        int n;
+        char buffer[100];
+        n = recv(clientSocket1, &buffer, sizeof(buffer),0);
+        //cout<< buffer2  ;
+        if (n == -1) {
+            throw "Error reading";
+        }
+        string myCommand(buffer);
+        string command;
+        string buf;
+        stringstream ss(myCommand);
+        ss >> command;
+        tokens.push_back(command);
+        while (ss >> buf)
+            tokens.push_back(buf);
+        tokens.erase(tokens.begin());
+        commandsManager.executeCommand(command,tokens,clientSocket1,clientSocket2);
     }
 };
