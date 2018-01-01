@@ -31,6 +31,10 @@ CloseCommand.cpp
 /home/gal/CLionProjects/Server/CloseCommand.cpp
 PlayCommand.cpp
 /home/gal/CLionProjects/Server/PlayCommand.cpp
+ListCommand.cpp
+/home/gal/CLionProjects/Server/ListCommand.cpp
+JoinCommand.cpp
+/home/gal/CLionProjects/Server/JoinCommand.cpp
 
 /home/gal/CLionProjects/Server/CommandsManager.h
 map

@@ -39,19 +39,21 @@ void* HandleClient::gate(void* elm) {
 
 void HandleClient::handle(void* elm){
     clientInfo* info =(clientInfo*)elm;
-    char buffer[100];
+    //char buffer[100];
 
     //string myCommand;
     string command;
-    vector<string> tokens = getCommand(info->clientSocket,command,buffer);
+    vector<string> tokens = getCommand(info->clientSocket,command);
     pthread_mutex_lock(&lock);
     commandsManager->executeCommand(command,tokens,info->clientSocket,-1);
     pthread_mutex_unlock(&lock);
 }
-vector<string> HandleClient::getCommand(int clientSocket,string &command,char* buffer) {
+vector<string> HandleClient::getCommand(int clientSocket,string &command) {
     vector<string> tokens;
     int n;
-    n = read(clientSocket, &buffer, sizeof(buffer));
+    char buffer[100];
+    n = recv(clientSocket, &buffer, sizeof(buffer),0);
+    //cout<< buffer2  ;
     if (n == -1) {
         throw "Error reading";
     }

@@ -11,6 +11,9 @@ CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CommandsManager.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../HandleClient.h
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../HandleGame.h
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../JoinCommand.cpp
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../ListCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../PlayCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../StartCommand.cpp
 

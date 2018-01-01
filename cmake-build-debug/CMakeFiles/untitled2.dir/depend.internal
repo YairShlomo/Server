@@ -12,6 +12,9 @@ CMakeFiles/untitled2.dir/CommandsManager.cpp.o
  /home/gal/CLionProjects/Server/CommandsManager.cpp
  /home/gal/CLionProjects/Server/CommandsManager.h
  /home/gal/CLionProjects/Server/HandleClient.h
+ /home/gal/CLionProjects/Server/HandleGame.h
+ /home/gal/CLionProjects/Server/JoinCommand.cpp
+ /home/gal/CLionProjects/Server/ListCommand.cpp
  /home/gal/CLionProjects/Server/PlayCommand.cpp
  /home/gal/CLionProjects/Server/StartCommand.cpp
 CMakeFiles/untitled2.dir/HandleClient.cpp.o

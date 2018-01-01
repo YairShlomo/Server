@@ -19,7 +19,7 @@ public:
     static void* gate(void* elm);
     void handle(void* elm);
     void closeAll();
-    vector<string> getCommand(int clientSocket,string &command,char* buffer);
+    vector<string> getCommand(int clientSocket,string &command);
     };
 struct clientInfo {
     int clientSocket;
