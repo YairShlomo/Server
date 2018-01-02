@@ -111,6 +111,8 @@ sstream
 /home/yair/CLionProjects/Server/PlayCommand.cpp
 unistd.h
 -
+cstring
+-
 Command.h
 /home/yair/CLionProjects/Server/Command.h
 HandleClient.h

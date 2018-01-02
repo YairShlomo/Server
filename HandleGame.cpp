@@ -6,8 +6,10 @@
 #include <sys/socket.h>
 #include "HandleGame.h"
 #include "HandleClient.h"
-HandleGame::HandleGame(int clientSocket1,int clientSocket2,CommandsManager commandsManager):
+HandleGame::HandleGame(int clientSocket1,int clientSocket2,CommandsManager* commandsManager):
         clientSocket1(clientSocket1),clientSocket2(clientSocket2),commandsManager(commandsManager){
+    cout << clientSocket1;
+    cout << clientSocket2;
     /*
     clientInfo1=new clientInfo();
     clientInfo1->clientSocket=clientSocket1;
@@ -40,7 +42,6 @@ HandleGame* handleGame = (HandleGame*)elm;
 }
  */
 void HandleGame::handle() {
-    char buffer[100];
     int n, currentSocket, otherSocket;
     bool turn = true;
     string command;
@@ -52,22 +53,19 @@ void HandleGame::handle() {
             currentSocket = clientSocket2;
             otherSocket = clientSocket1;
         }
+        vector<string> tokens = getCommand(currentSocket, otherSocket, command);
+        if (tokens[0].compare("ENDC") == 0) {
+            close(currentSocket);
+            close(otherSocket);
+            return;
+        }
+        commandsManager->executeCommand(command, tokens, currentSocket, otherSocket);
 
+        turn = !turn;
+    }
+/*
         n = recv(currentSocket, &buffer, sizeof(buffer),0);
-        if (n == -1) {
-            cout << "Error reading" << endl;
-            return;
-        }
-        if (n == 0) {
-            char finish[7] = "ENDC";
-            int clientEnd = write(otherSocket, &finish, sizeof(buffer));
-            if (clientEnd == -1) {
-                throw "Error writing to socket";
-            }
-            cout << "Client disconnected" << endl;
-            return;
-        }
-        vector<string> tokens = getCommand(currentSocket,command,buffer);
+
        /* if (strcmp(buffer, "End") == 0) {
             close(clientSocket1);
             close(clientSocket2);
@@ -83,23 +81,37 @@ void HandleGame::handle() {
             close(clientSocket2);
             //close(serverSocket);
             return;
-        }*/
+        }
 
 
-        commandsManager.executeCommand(command,tokens,currentSocket,otherSocket);
-       /* n = write(otherSocket, &buffer, sizeof(buffer));
-        if (n == -1) {
-            throw "Error writing to socket";
-        }*/
-        turn = !turn;
-    }
+        /* n = write(otherSocket, &buffer, sizeof(buffer));
+         if (n == -1) {
+             throw "Error writing to socket";
+         }
+         */
 }
-vector<string> HandleGame::getCommand(int clientSocket,string &command,char* buffer) {
+
+
+vector<string> HandleGame::getCommand(int clientSocket,int otherSocket, string &command) {
+    char buffer[100];
+
     vector<string> tokens;
     int n;
+
     n = read(clientSocket, &buffer, sizeof(buffer));
+
     if (n == -1) {
         throw "Error reading";
+    }
+
+    if (n == 0) {
+        char finish[7] = "ENDC";
+        int clientEnd = write(otherSocket, &finish, sizeof(buffer));
+        if (clientEnd == -1) {
+            throw "Error writing to socket";
+        }
+        cout << "Client disconnected" << endl;
+        tokens.push_back("ENDC");
     }
     string myCommand(buffer);
     string buf;

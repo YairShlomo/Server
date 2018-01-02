@@ -27,8 +27,10 @@ class JoinCommand: public Command {
             if (sendByte < 0) {
                 throw "error sending to client";
             }
-            CommandsManager commandsManager(games);
-            HandleGame handleGame(clientSocket1, clientSocket2, commandsManager);
+            CommandsManager* commandsManager=new CommandsManager(games);
+            HandleGame handleGame(clientSocket2, clientSocket1, commandsManager);
+            cout << clientSocket1;
+            cout << clientSocket2;
             handleGame.handle();
         }
     }

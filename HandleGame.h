@@ -9,13 +9,13 @@ class HandleGame {
 private:
     int clientSocket1;
     int clientSocket2;
-    CommandsManager commandsManager;
+    CommandsManager* commandsManager;
     clientInfo* clientInfo1;
     clientInfo* clientInfo2;
 public:
-    HandleGame(int clientSocket1,int clientSocket2,CommandsManager commandsManager);
+    HandleGame(int clientSocket1,int clientSocket2,CommandsManager* commandsManager);
     //static void* gate(void* elm);
-    vector<string> getCommand(int clientSocket,string &command,char* buffer);
+    vector<string> getCommand(int clientSocket,int otherSocket,string &command);
 
         void handle();
 

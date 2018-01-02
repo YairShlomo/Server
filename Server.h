@@ -30,7 +30,6 @@ private:
     void handleGame(int clientSocket1, int clientSocket2);
     static void* listening(void *threadId);
     void execute(string myCommand);
-
 };
 struct ThreadArgs {
     int serverSocket;
