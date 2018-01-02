@@ -14,18 +14,19 @@ class PlayCommand: public Command {
 
 
             for(vector<string>::iterator it = args.begin(); it != args.end(); ++it) {
+                cout<<':'<<clientSocket2;
                 string k=*it;
                 //char buffer[sizeof(k.c_str())+1];
                 char buffer[2];
 
                 strcpy(buffer,k.c_str());
                 cout << buffer << "\n";
-
                 int sendByte = write(clientSocket2, &buffer, sizeof(buffer));
                 if (sendByte < 0) {
                     throw "error sending to client";
                 }
             }
+            /*
             char bufferEnd[7] = {"S"};
             int  sendByte = write(clientSocket2, &bufferEnd, 1);
             if (sendByte < 0) {

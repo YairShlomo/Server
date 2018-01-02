@@ -22,7 +22,6 @@ class ListCommand: public Command {
         for(map<string,int>::iterator it = games.begin(); it != games.end(); ++it) {
             char buffer[sizeof(it->first.c_str())+1];
             strcpy(buffer,it->first.c_str());
-            cout << buffer << "\n";
 
             sendByte = write(clientSocket1, &buffer, sizeof(buffer));
             if (sendByte < 0) {
