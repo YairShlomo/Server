@@ -94,10 +94,8 @@ void HandleGame::handle() {
 
 vector<string> HandleGame::getCommand(int clientSocket,int otherSocket, string &command) {
     char buffer[100];
-
     vector<string> tokens;
     int n;
-
     n = read(clientSocket, &buffer, sizeof(buffer));
 
     if (n == -1) {
