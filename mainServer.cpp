@@ -7,7 +7,11 @@ ID: 305216962
 #include "Server.h"
 #include "HandleClient.h"
 #include <fstream>
+struct MapsGames {
+    map<string,int> availableGames;
+    map<string,int> allGames;
 
+};
 using namespace std;
 string getlineInput(string line);
 
@@ -27,6 +31,7 @@ int main() {
     return 0;
     }
     map<string,int> games;
+
     CommandsManager* commandsManager=new CommandsManager(games);
     HandleClient handleClient(commandsManager);
     Server server(portNumb,handleClient);

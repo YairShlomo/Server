@@ -14,12 +14,11 @@ using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
 map <string,int> Game;
 Server::Server(int port,HandleClient handleClient): port(port), serverSocket(0),handleClient(handleClient),clients() {
-    stopServer=false;
+    serverIsRunning=false;
     cout << "Server" << endl;
 }
 
 void Server::start() {
-    char *name;
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket < 0) {
@@ -45,18 +44,20 @@ void Server::start() {
         cout << "Error ,unable to create thread" << rc << endl;
         exit(-1);
     }
-    cin >> name;
-    char buffer[5] = {"END"};
     while (true) {
-        if (strcmp(name, "exit") == 0) {
+    string name;
+    cin >> name;
+    //char buffer[5] = {"END"};
+        if (name=="exit") {
             handleClient.closeAll();
             for (vector<int>::iterator it = clients.begin(); it != clients.end(); ++it) {
                 close(*it);
                 cout << "client" << *it << "is closed";
             }
-            stopServer=true;
+            serverIsRunning=true;
             cout << "Server is closed" << endl;
             close(serverSocket);
+            exit(0);
         }
     }
 }
@@ -89,7 +90,7 @@ void Server::listening() {
     struct sockaddr_in clientAddress;
     //long serversocket = (long)sSocket;
     socklen_t clientAddressLen = sizeof(clientAddress);
-    while (!stopServer) {
+    while (!serverIsRunning) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct

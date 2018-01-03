@@ -36,7 +36,7 @@ private:
     int port;
     int serverSocket; // the socket's server
     HandleClient handleClient;
-    bool stopServer;
+    bool serverIsRunning;
     static void* gate(void* elm);
     vector<int> clients;
 
