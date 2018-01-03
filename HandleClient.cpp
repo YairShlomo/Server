@@ -30,8 +30,9 @@ void HandleClient::run(int clientSocket) {
     clientInfo* clientinfo1=new clientInfo;
     clientinfo1->clientSocket=clientSocket;
     clientinfo1->handleClient = this;
-    threads.push_back(thread);
     int gT = pthread_create(&thread, NULL,  gateToHandle, (void *)clientinfo1);
+    clientinfo1->thread=thread;
+    threads.push_back(thread);
 
     //handleClient(clientSocket);
     //close(clientSocket);
@@ -40,8 +41,13 @@ void* HandleClient::gateToHandle(void* elm) {
     clientInfo* info =(clientInfo*)elm;
     info->handleClient->handle(info);
 }
-
-
+void HandleClient::eraseThread(pthread_t thread ) {
+    for (int i=0;i<threads.size(); i++) {
+        if (threads[i]==thread) {
+            threads.erase(threads.begin() +i);
+        }
+    }
+}
 
 void HandleClient::handle(void* elm){
     clientInfo* info =(clientInfo*)elm;
@@ -52,7 +58,9 @@ void HandleClient::handle(void* elm){
     vector<string> tokens = getCommand(info->clientSocket,command);
     pthread_mutex_lock(&lock);
     commandsManager->executeCommand(command,tokens,info->clientSocket,-1);
+    eraseThread(info->thread);
     pthread_mutex_unlock(&lock);
+    //threads.erase()
 }
 vector<string> HandleClient::getCommand(int clientSocket,string &command) {
     vector<string> tokens;

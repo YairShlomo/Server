@@ -89,9 +89,7 @@ void Server::listening() {
     struct sockaddr_in clientAddress;
     //long serversocket = (long)sSocket;
     socklen_t clientAddressLen = sizeof(clientAddress);
-    vector<pthread_t> threads;
     while (!stopServer) {
-        cout <<"sizeV"<<threads.size();
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct

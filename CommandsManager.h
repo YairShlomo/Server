@@ -5,7 +5,7 @@
 
 #include <map>
 #include "Command.h"
-class  clientInfo;
+class  ClientInfo;
 
 class CommandsManager {
 public:

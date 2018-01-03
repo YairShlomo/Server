@@ -40,11 +40,13 @@ public:
     * @return tokens - vector with all the rest of full command.
     */
     vector<string> getCommand(int clientSocket,string &command);
+    void eraseThread(pthread_t thread);
 
 };
 struct clientInfo {
     int clientSocket;
     HandleClient* handleClient;
+    pthread_t thread;
 };
 
 #endif //HANDLECLIENT
