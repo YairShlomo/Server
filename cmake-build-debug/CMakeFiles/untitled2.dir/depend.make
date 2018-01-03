@@ -21,6 +21,7 @@ CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.cpp
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.h
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Server.h
 
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../CommandsManager.h
@@ -58,6 +59,7 @@ CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../StartCommand.cpp
 
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../CommandsManager.h
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Server.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../mainServer.cpp
 

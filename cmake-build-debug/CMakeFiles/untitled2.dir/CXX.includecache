@@ -45,6 +45,8 @@ Command.h
 /home/yair/CLionProjects/Server/HandleClient.cpp
 HandleClient.h
 /home/yair/CLionProjects/Server/HandleClient.h
+Server.h
+/home/yair/CLionProjects/Server/Server.h
 sys/types.h
 -
 unistd.h
@@ -58,6 +60,8 @@ sys/socket.h
 
 /home/yair/CLionProjects/Server/HandleClient.h
 iostream
+-
+thread_db.h
 -
 CommandsManager.h
 /home/yair/CLionProjects/Server/CommandsManager.h
@@ -121,6 +125,8 @@ HandleClient.h
 /home/yair/CLionProjects/Server/Server.cpp
 sstream
 -
+thread_db.h
+-
 Server.h
 /home/yair/CLionProjects/Server/Server.h
 HandleClient.h
@@ -145,6 +151,10 @@ iostream
 -
 CommandsManager.h
 /home/yair/CLionProjects/Server/CommandsManager.h
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
+thread_db.h
+-
 
 /home/yair/CLionProjects/Server/StartCommand.cpp
 sys/socket.h
@@ -159,8 +169,8 @@ HandleClient.h
 /home/yair/CLionProjects/Server/mainServer.cpp
 Server.h
 /home/yair/CLionProjects/Server/Server.h
-iostream
--
+HandleClient.h
+/home/yair/CLionProjects/Server/HandleClient.h
 fstream
 -
 

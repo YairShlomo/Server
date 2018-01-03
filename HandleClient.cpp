@@ -1,5 +1,6 @@
 
 #include "HandleClient.h"
+#include "Server.h"
 #include <sys/types.h>
 #include <unistd.h>
 #include <sstream>
@@ -8,7 +9,8 @@
 
 using namespace std;
 #define MAX 100;
-HandleClient::HandleClient(CommandsManager* commandsManager):commandsManager(commandsManager) {
+HandleClient::HandleClient(CommandsManager* commandsManager):commandsManager(commandsManager)
+,threads(){
     pthread_mutex_init(&lock,0);
 }
 
@@ -28,14 +30,18 @@ void HandleClient::run(int clientSocket) {
     clientInfo* clientinfo1=new clientInfo;
     clientinfo1->clientSocket=clientSocket;
     clientinfo1->handleClient = this;
-    int gT = pthread_create(&thread, NULL,  gate, (void *)clientinfo1);
+    threads.push_back(thread);
+    int gT = pthread_create(&thread, NULL,  gateToHandle, (void *)clientinfo1);
+
     //handleClient(clientSocket);
     //close(clientSocket);
 }
-void* HandleClient::gate(void* elm) {
+void* HandleClient::gateToHandle(void* elm) {
     clientInfo* info =(clientInfo*)elm;
     info->handleClient->handle(info);
 }
+
+
 
 void HandleClient::handle(void* elm){
     clientInfo* info =(clientInfo*)elm;
@@ -67,11 +73,9 @@ vector<string> HandleClient::getCommand(int clientSocket,string &command) {
     tokens.erase(tokens.begin());
     return tokens;
 }
-/*
 void HandleClient::closeAll(){
-    clientInfo* info;
-    string args;
-    commandsManager.executeCommand(command,tokens);
-
+    for(int i=0; i<threads.size();i++) {
+        pthread_cancel(threads[i]);
+        cout<<"game"<<i<<"is closed"<<endl;
+    }
 }
-*/

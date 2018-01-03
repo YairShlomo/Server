@@ -5,7 +5,7 @@ Name:Gal Eini
 ID: 305216962
 */
 #include "Server.h"
-#include <iostream>
+#include "HandleClient.h"
 #include <fstream>
 
 using namespace std;
@@ -26,7 +26,10 @@ int main() {
 
     return 0;
     }
-    Server server(portNumb);
+    map<string,int> games;
+    CommandsManager* commandsManager=new CommandsManager(games);
+    HandleClient handleClient(commandsManager);
+    Server server(portNumb,handleClient);
     try {
         server.start();
     } catch (const char *msg) {

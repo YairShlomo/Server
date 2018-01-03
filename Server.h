@@ -15,26 +15,33 @@ ID: 305216962
 #include <string.h>
 #include <iostream>
 #include "CommandsManager.h"
+#include "HandleClient.h"
+#include <thread_db.h>
 
+/**
+ * Server is managing any client want to connecet.
+*/
 class Server {
 public:
-    Server(int port);
+    Server(int port,HandleClient handleClient);
+    /**
+    * start intiailizing server and start listen to clients.call threads for clients to connect
+    */
     void start();
-    void stop();
     map<string,int> games;
+    void listening();
+
 
 private:
     int port;
-    int serverSocket; // the socket's file descriptor
-    static void* handleClient(void *clientSocket);
-    void handleGame(int clientSocket1, int clientSocket2);
-    static void* listening(void *threadId);
-    void execute(string myCommand);
-};
-struct ThreadArgs {
-    int serverSocket;
-    CommandsManager* commandsManager;
+    int serverSocket; // the socket's server
+    HandleClient handleClient;
+    bool stopServer;
+    static void* gate(void* elm);
     vector<int> clients;
 
-};
+
+
+    };
+
 #endif //SERVER_H

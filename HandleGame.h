@@ -10,17 +10,22 @@ private:
     int clientSocket1;
     int clientSocket2;
     CommandsManager* commandsManager;
-    clientInfo* clientInfo1;
-    clientInfo* clientInfo2;
+
 public:
     HandleGame(int clientSocket1,int clientSocket2,CommandsManager* commandsManager);
-    //static void* gate(void* elm);
+    /**
+    * getCommand arranging full command and returns vec with all words of command without
+     * the command type itself.
+    * @param clientSocket - number of socket connection of first client in game.
+    * @param otherSocket - number of socket connection of second client in game
+    * @param command - full command
+    * @return tokens - vector with all the rest of full command.
+    */
     vector<string> getCommand(int clientSocket,int otherSocket,string &command);
-
-        void handle();
-
-    //void run();
-
+    /**
+    * handle call excutecommand func.
+    */
+    void handle();
 };
 
 

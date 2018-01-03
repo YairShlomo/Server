@@ -22,6 +22,7 @@ CMakeFiles/untitled2.dir/HandleClient.cpp.o
  /home/yair/CLionProjects/Server/CommandsManager.h
  /home/yair/CLionProjects/Server/HandleClient.cpp
  /home/yair/CLionProjects/Server/HandleClient.h
+ /home/yair/CLionProjects/Server/Server.h
 CMakeFiles/untitled2.dir/HandleGame.cpp.o
  /home/yair/CLionProjects/Server/Command.h
  /home/yair/CLionProjects/Server/CommandsManager.h
@@ -59,5 +60,6 @@ CMakeFiles/untitled2.dir/StartCommand.cpp.o
 CMakeFiles/untitled2.dir/mainServer.cpp.o
  /home/yair/CLionProjects/Server/Command.h
  /home/yair/CLionProjects/Server/CommandsManager.h
+ /home/yair/CLionProjects/Server/HandleClient.h
  /home/yair/CLionProjects/Server/Server.h
  /home/yair/CLionProjects/Server/mainServer.cpp
