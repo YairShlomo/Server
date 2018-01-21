@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled2.dir/PlayCommand.cpp.o"
   "CMakeFiles/untitled2.dir/JoinCommand.cpp.o"
   "CMakeFiles/untitled2.dir/ListCommand.cpp.o"
+  "CMakeFiles/untitled2.dir/ThreadPool.cpp.o"
   "untitled2.pdb"
   "untitled2"
 )

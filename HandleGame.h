@@ -15,7 +15,7 @@ public:
     HandleGame(int clientSocket1,int clientSocket2,CommandsManager* commandsManager);
     /**
     * getCommand arranging full command and returns vec with all words of command without
-     * the command type itself.
+     * the command type itself.z
     * @param clientSocket - number of socket connection of first client in game.
     * @param otherSocket - number of socket connection of second client in game
     * @param command - full command

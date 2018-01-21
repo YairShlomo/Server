@@ -3,6 +3,7 @@
 #include <iostream>
 #include <thread_db.h>
 #include "CommandsManager.h"
+#include "ThreadPool.h"
 
 
 struct clientInfo;
@@ -14,14 +15,14 @@ private:
     vector<pthread_t> threads;
     CommandsManager* commandsManager;
     map<string,int> games;
-
+    Task *task;
 public:
     HandleClient(CommandsManager* commandsManager);
     /**
     * run send message of connection approve. call thread to any coomand.
     * @param clientSocket - number of socket connection of this client
     */
-    void run(int clientSocket);
+    void run(int clientSocket,ThreadPool &pool, vector<Task> &tasks);
     /**
     * connecting func. connect between this static func of thread to handle func.
     * @param elm - struct of thread func.

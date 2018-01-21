@@ -9,11 +9,14 @@ ID: 305216962
 #include <thread_db.h>
 #include "Server.h"
 #include "HandleClient.h"
+#include "ThreadPool.h"
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
+
+#define TASKS_NUM 5
 map <string,int> Game;
-Server::Server(int port,HandleClient handleClient): port(port), serverSocket(0),handleClient(handleClient),clients() {
+Server::Server(int port,HandleClient handleClient): port(port), serverSocket(0),handleClient(handleClient),clients(),pool(THREADS_NUM) {
     serverIsRunning=false;
     cout << "Server" << endl;
 }
@@ -49,10 +52,12 @@ void Server::start() {
     cin >> name;
     //char buffer[5] = {"END"};
         if (name=="exit") {
-            handleClient.closeAll();
-            for (vector<int>::iterator it = clients.begin(); it != clients.end(); ++it) {
-                close(*it);
-                cout << "client" << *it << "is closed";
+            pool.terminate();
+
+            for (int i = 0; i < tasks.size(); i++) {
+               // delete tasks[i];
+                tasks.erase(tasks.begin()+i);
+                cout << "client" << i+1 << "is closed";
             }
             serverIsRunning=true;
             cout << "Server is closed" << endl;
@@ -90,13 +95,15 @@ void Server::listening() {
     struct sockaddr_in clientAddress;
     //long serversocket = (long)sSocket;
     socklen_t clientAddressLen = sizeof(clientAddress);
+    //ThreadPool pool(THREADS_NUM);
     while (!serverIsRunning) {
         cout << "Waiting for client connections..." << endl;
         // Accept a new client connection
         int clientSocket = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
+
         clients.push_back(clientSocket);
-        handleClient.run(clientSocket);
+        handleClient.run(clientSocket, pool, tasks);
     }
 }
 

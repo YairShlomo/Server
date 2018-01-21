@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yair/CLionProjects/Server
+CMAKE_SOURCE_DIR = /home/gal/CLionProjects/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yair/CLionProjects/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gal/CLionProjects/Server/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yair/CLionProjects/Server/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yair/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/gal/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/CLionProjects/Server/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gal/CLionProjects/Server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -366,6 +366,33 @@ StartCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/StartCommand.cpp.s
 .PHONY : StartCommand.cpp.s
 
+ThreadPool.o: ThreadPool.cpp.o
+
+.PHONY : ThreadPool.o
+
+# target to build an object file
+ThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ThreadPool.cpp.o
+.PHONY : ThreadPool.cpp.o
+
+ThreadPool.i: ThreadPool.cpp.i
+
+.PHONY : ThreadPool.i
+
+# target to preprocess a source file
+ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ThreadPool.cpp.i
+.PHONY : ThreadPool.cpp.i
+
+ThreadPool.s: ThreadPool.cpp.s
+
+.PHONY : ThreadPool.s
+
+# target to generate assembly for a file
+ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/ThreadPool.cpp.s
+.PHONY : ThreadPool.cpp.s
+
 mainServer.o: mainServer.cpp.o
 
 .PHONY : mainServer.o
@@ -429,6 +456,9 @@ help:
 	@echo "... StartCommand.o"
 	@echo "... StartCommand.i"
 	@echo "... StartCommand.s"
+	@echo "... ThreadPool.o"
+	@echo "... ThreadPool.i"
+	@echo "... ThreadPool.s"
 	@echo "... mainServer.o"
 	@echo "... mainServer.i"
 	@echo "... mainServer.s"

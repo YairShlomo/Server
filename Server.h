@@ -17,7 +17,7 @@ ID: 305216962
 #include "CommandsManager.h"
 #include "HandleClient.h"
 #include <thread_db.h>
-
+#define THREADS_NUM 3
 /**
  * Server is managing any client want to connecet.
 */
@@ -39,7 +39,8 @@ private:
     bool serverIsRunning;
     static void* gate(void* elm);
     vector<int> clients;
-
+    ThreadPool pool;
+    vector<Task> tasks;
 
 
     };

@@ -5,6 +5,8 @@ CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../CloseCommand.cpp
 CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../HandleClient.h
+CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/CloseCommand.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../CloseCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../Command.h
@@ -16,50 +18,72 @@ CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../JoinCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../ListCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../PlayCommand.cpp
 CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../StartCommand.cpp
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/CommandsManager.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.cpp
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Server.h
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/HandleClient.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../HandleGame.cpp
 CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../HandleGame.h
+CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/HandleGame.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../HandleGame.h
 CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../JoinCommand.cpp
+CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/JoinCommand.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../HandleGame.h
 CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../ListCommand.cpp
+CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/ListCommand.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../PlayCommand.cpp
+CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/PlayCommand.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/Server.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/Server.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Server.cpp
 CMakeFiles/untitled2.dir/Server.cpp.o: ../Server.h
+CMakeFiles/untitled2.dir/Server.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/Server.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../StartCommand.cpp
+CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/StartCommand.cpp.o: ../ThreadPool.h
+
+CMakeFiles/untitled2.dir/ThreadPool.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/ThreadPool.cpp.o: ../ThreadPool.cpp
+CMakeFiles/untitled2.dir/ThreadPool.cpp.o: ../ThreadPool.h
 
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Command.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../CommandsManager.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../HandleClient.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Server.h
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../Task.h
+CMakeFiles/untitled2.dir/mainServer.cpp.o: ../ThreadPool.h
 CMakeFiles/untitled2.dir/mainServer.cpp.o: ../mainServer.cpp
 
