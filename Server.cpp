@@ -66,22 +66,6 @@ void Server::start() {
         }
     }
 }
-            /*
-            for (vector<thread_t>::iterator it = threadArgs->threads.begin(); it != threadArgs->threads.end(); ++it) {
-                pthread_cancel(*it);
-            }
-            for (vector<int>::iterator it = threadArgs->clients.begin(); it != threadArgs->clients.end(); ++it) {
-                int sendEnd = write(*it, &buffer, sizeof(buffer));
-                if (sendEnd == -1) {
-                    throw "Error writing to socket";
-                }
-                close(*it);
-                cout << "client" << *it << "is closed";
-            }
-            pthread_cancel(thread);
-            close(serverSocket);
-*/
-
 void* Server::gate(void* elm) {
                 Server *server = (Server *) elm;
                 try {

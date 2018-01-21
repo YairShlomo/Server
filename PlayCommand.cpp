@@ -56,20 +56,6 @@ class PlayCommand: public Command {
             if (sendByte < 0) {
                 throw "error sending to client";
             }
-             /*
-            /*
-            char bufferEnd[7] = {"S"};
-            int  sendByte = write(clientSocket2, &bufferEnd, 1);
-            if (sendByte < 0) {
-                throw "error sending to client";
-            }
-            /*
-            //args.erase(args.begin());
-            n = write(clientSocket2,&args,sizeof(args));
-            if (n == -1) {
-                throw "Error writing to socket";
-            }
-             */
         }
     }
 };

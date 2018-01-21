@@ -29,7 +29,6 @@ void ThreadPool::executeTasks() {
             pthread_mutex_unlock(&lock);
             sleep(1);
         }
-
     }
 }
 void ThreadPool::terminate() {

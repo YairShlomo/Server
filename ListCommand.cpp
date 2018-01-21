@@ -10,10 +10,6 @@ using namespace std;
 
 class ListCommand: public Command {
     virtual void execute(vector<string> args, int clientSocket1,int clientSocket2, map<string,int> &games) {
-       /* cout << "Games avaliable to play are:\n";
-        for(map<string,int>::iterator it = games.begin(); it != games.end(); ++it) {
-            cout << it->first << "\n";
-        }*/
         CommandsManager commandsManager(games);
         int sendByte;
         char listGame[11]={"list_games"};

@@ -39,32 +39,6 @@ void HandleGame::handle() {
             return;
         }
     }
-/*
-        n = recv(currentSocket, &buffer, sizeof(buffer),0);
-
-       /* if (strcmp(buffer, "End") == 0) {
-            close(clientSocket1);
-            close(clientSocket2);
-            //close(serverSocket);
-            return;
-        }
-        if (strcmp(buffer, "X") == 0) {
-            close(clientSocket1);
-            //close(serverSocket);
-            return;
-        }
-        if (strcmp(buffer, "O") == 0) {
-            close(clientSocket2);
-            //close(serverSocket);
-            return;
-        }
-
-
-        /* n = write(otherSocket, &buffer, sizeof(buffer));
-         if (n == -1) {
-             throw "Error writing to socket";
-         }
-         */
 }
 
 

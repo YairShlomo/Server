@@ -25,17 +25,12 @@ void HandleClient::run(int clientSocket, ThreadPool &pool, vector<Task> &tasks) 
     if (sendApproval < 0) {
         throw "error sending to client";
     }
-    //pthread_t thread;
-    //gameThreads.push_back(thread);
     clientInfo* clientinfo1=new clientInfo;
     clientinfo1->clientSocket=clientSocket;
     clientinfo1->handleClient = this;
     task= new Task(gateToHandle,(void *)clientinfo1);
     tasks.push_back(*task);
     pool.addTask(task);
-   // int gT = pthread_create(&thread, NULL,  gateToHandle, (void *)clientinfo1);
-   // clientinfo1->thread=thread;
-   // threads.push_back(thread);
 }
 void* HandleClient::gateToHandle(void* elm) {
     clientInfo* info =(clientInfo*)elm;
@@ -51,17 +46,12 @@ void HandleClient::eraseThread(pthread_t thread ) {
 
 void HandleClient::handle(void* elm){
     clientInfo* info =(clientInfo*)elm;
-    //char buffer[100];
-
-    //string myCommand;
     string command;
     vector<string> tokens = getCommand(info->clientSocket,command);
     pthread_mutex_lock(&lock);
     commandsManager->executeCommand(command,tokens,info->clientSocket,-1);
     delete(task);
-   // eraseThread(info->thread);
     pthread_mutex_unlock(&lock);
-    //threads.erase()
 }
 vector<string> HandleClient::getCommand(int clientSocket,string &command) {
     vector<string> tokens;
